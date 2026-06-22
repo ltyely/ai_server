@@ -1,0 +1,30 @@
+# 模型文件与大体积二进制
+*.gguf
+*.bin
+models/
+models.*/
+
+# 编译产物与 binary
+bin/
+bin-candidate/
+build/
+build-*/
+llama.cpp/build/
+llama.cpp/build-*/
+*.o
+*.a
+*.so
+
+# 日志与运行时输出
+logs/
+*.log
+
+# Python 缓存
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 临时文件
+*.tmp
+*.swp
+.DS_Store
