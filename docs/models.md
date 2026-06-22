@@ -35,8 +35,8 @@
 | 来源仓库 | `crotron/Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP` |
 | 原始指定仓库 | `HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Balanced`（该仓库不存在 MTP 文件） |
 | 存放路径 | `/home/yi/data/ai_server/models/qwen3.6-27b/longvision-128k/` |
-| 文件大小 | 待补充 |
-| SHA256 | 待补充 |
+| 文件大小 | 21264273824 bytes (~21.26 GB) |
+| SHA256 | `a1f55e58284dc36fd19d57911579a28cea603fbeeddd21b9b94ee60f0183fbd2` |
 | 下载时间 | 2026-06-22 |
 
 ### mmproj
