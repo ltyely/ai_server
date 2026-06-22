@@ -1,0 +1,16 @@
+[Unit]
+Description=Qwen3.6 27B LongVision 128K MTP MM llama-server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/llm
+ExecStart=/home/yi/data/ai_server/scripts/start-qwen36-27b-longvision-128k.sh
+Restart=no
+TimeoutStopSec=30
+KillSignal=SIGINT
+EnvironmentFile=/home/yi/data/ai_server/configs/qwen36-27b-longvision-128k.env
+
+[Install]
+WantedBy=multi-user.target

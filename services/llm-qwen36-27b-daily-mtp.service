@@ -1,0 +1,17 @@
+[Unit]
+Description=Qwen3.6 27B Daily MTP 65K llama-server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/llm
+ExecStart=/home/yi/data/ai_server/scripts/start-qwen36-27b-daily-mtp.sh
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+KillSignal=SIGINT
+EnvironmentFile=/home/yi/data/ai_server/configs/qwen36-27b-daily-mtp.env
+
+[Install]
+WantedBy=multi-user.target
