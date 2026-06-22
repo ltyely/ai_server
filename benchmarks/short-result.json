@@ -1,0 +1,814 @@
+{
+  "summary": {
+    "count": 100,
+    "success": 100,
+    "failed": 0,
+    "mean_latency": 1.805073368549347,
+    "min_latency": 0.6293356418609619,
+    "max_latency": 3.870342969894409,
+    "p95_latency": 3.601565361022949,
+    "total_completion_tokens": 5581
+  },
+  "results": [
+    {
+      "index": 0,
+      "ok": true,
+      "elapsed": 1.6757123470306396,
+      "prompt_tokens": 24,
+      "completion_tokens": 41,
+      "content": "MTP（多令牌预测）是一种让大语言模型在生成当前词的同时，并行预测后续多个词的技术，旨在通过增加单次前向传播的信息量来提升训练效率和推理速度。"
+    },
+    {
+      "index": 1,
+      "ok": true,
+      "elapsed": 1.7204711437225342,
+      "prompt_tokens": 22,
+      "completion_tokens": 42,
+      "content": "ROCm (Radeon Open Compute Platform) is an open-source software stack developed by AMD that enables high-performance computing and GPU acceleration for data centers, workstations, and supercomputers using AMD GPUs."
+    },
+    {
+      "index": 2,
+      "ok": true,
+      "elapsed": 1.5793306827545166,
+      "prompt_tokens": 27,
+      "completion_tokens": 50,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 3,
+      "ok": true,
+      "elapsed": 3.150238513946533,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小\n\n## 常用命令\n\n```bash\nls -lhS\n```\n\n### 参数说明：\n| 参数 | 含义 |\n|------|------|\n| `-l` | 长格式显示，包含文件大小、权限、所有者等信息 |\n| `-h` | 以人类可读的格式显示大小（如 KB、MB、GB） |\n| `-S` | 按文件大小降序排列 |\n\n---\n\n## 其他常用变体\n\n### 1. 仅显示文件名和大小，按大小排序\n```bash\nls -lh"
+    },
+    {
+      "index": 4,
+      "ok": true,
+      "elapsed": 0.7726354598999023,
+      "prompt_tokens": 26,
+      "completion_tokens": 11,
+      "content": "{\"name\":\"llama\",\"type\":\"server\"}"
+    },
+    {
+      "index": 5,
+      "ok": true,
+      "elapsed": 1.7754180431365967,
+      "prompt_tokens": 24,
+      "completion_tokens": 41,
+      "content": "MTP（多令牌预测）是一种让大语言模型在生成当前词的同时，并行预测后续多个词的机制，旨在通过增加单次前向传播的信息量来提升训练效率和推理速度。"
+    },
+    {
+      "index": 6,
+      "ok": true,
+      "elapsed": 1.6423325538635254,
+      "prompt_tokens": 22,
+      "completion_tokens": 42,
+      "content": "ROCm (Radeon Open Compute Platform) is an open-source software stack developed by AMD that enables GPU computing and high-performance computing on AMD hardware, serving as a primary alternative to NVIDIA's CUDA ecosystem."
+    },
+    {
+      "index": 7,
+      "ok": true,
+      "elapsed": 1.4690871238708496,
+      "prompt_tokens": 27,
+      "completion_tokens": 48,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        return 0.0\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 8,
+      "ok": true,
+      "elapsed": 3.457104206085205,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小的 Shell 命令\n\n## 常用方法\n\n### 1. `ls -lh`（最简洁）\n```bash\nls -lh\n```\n- `-l`：长格式显示，包含文件大小\n- `-h`：以人类可读的单位显示（如 K、M、G）\n\n**示例输出：**\n```\n-rw-r--r-- 1 user group 4.2K Mar 10 10:30 file1.txt\ndrwxr-xr-x 2 user group 4.0K Mar 10 1"
+    },
+    {
+      "index": 9,
+      "ok": true,
+      "elapsed": 0.6685903072357178,
+      "prompt_tokens": 26,
+      "completion_tokens": 11,
+      "content": "{\"name\":\"llama\",\"type\":\"server\"}"
+    },
+    {
+      "index": 10,
+      "ok": true,
+      "elapsed": 1.739027738571167,
+      "prompt_tokens": 24,
+      "completion_tokens": 41,
+      "content": "MTP（多令牌预测）是一种让大语言模型在生成当前词的同时，并行预测后续多个词的技术，旨在通过增加单次前向传播的信息量来提升训练效率和推理速度。"
+    },
+    {
+      "index": 11,
+      "ok": true,
+      "elapsed": 1.4523565769195557,
+      "prompt_tokens": 22,
+      "completion_tokens": 38,
+      "content": "ROCm (Radeon Open Compute platform) is an open-source software stack developed by AMD that enables high-performance computing and GPU acceleration for data centers, workstations, and embedded systems."
+    },
+    {
+      "index": 12,
+      "ok": true,
+      "elapsed": 1.4233417510986328,
+      "prompt_tokens": 27,
+      "completion_tokens": 50,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 13,
+      "ok": true,
+      "elapsed": 3.870342969894409,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小\n\n## 常用命令\n\n### 1. `ls` + `du` 组合（推荐）\n\n```bash\ndu -sh *\n```\n\n- `-s`：汇总每个文件或目录的总大小\n- `-h`：以人类可读格式显示（如 K、M、G）\n- `*`：匹配当前目录下所有文件和子目录\n\n### 2. 仅查看文件（不含子目录递归）\n\n```bash\ndu -sh --max-depth=0 *\n```\n\n或使用 `find` + `ls`：\n\n```bash\n"
+    },
+    {
+      "index": 14,
+      "ok": true,
+      "elapsed": 0.6772925853729248,
+      "prompt_tokens": 26,
+      "completion_tokens": 11,
+      "content": "{\"name\":\"llama\",\"type\":\"server\"}"
+    },
+    {
+      "index": 15,
+      "ok": true,
+      "elapsed": 1.7641642093658447,
+      "prompt_tokens": 24,
+      "completion_tokens": 40,
+      "content": "MTP（多令牌预测）是一种让大语言模型在生成当前词的同时，并行预测后续多个词的技术，旨在通过增加每步计算的信息量来提升训练和推理效率。"
+    },
+    {
+      "index": 16,
+      "ok": true,
+      "elapsed": 1.4892911911010742,
+      "prompt_tokens": 22,
+      "completion_tokens": 39,
+      "content": "ROCm (Radeon Open Compute Platform) is an open-source software stack developed by AMD that enables high-performance computing and GPU acceleration for data centers, workstations, and supercomputers."
+    },
+    {
+      "index": 17,
+      "ok": true,
+      "elapsed": 1.4277567863464355,
+      "prompt_tokens": 27,
+      "completion_tokens": 50,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 18,
+      "ok": true,
+      "elapsed": 3.508155584335327,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小\n\n## 常用方法\n\n### 1. `du` + `sort`（推荐）\n```bash\ndu -h --max-depth=1 . | sort -hr\n```\n- `-h`：人类可读格式（KB、MB、GB）\n- `--max-depth=1`：只列出当前目录下的文件和子目录，不递归深入\n- `sort -hr`：按大小降序排序\n\n### 2. `ls` 命令\n```bash\nls -lhS\n```\n- `-l`：长格式显示\n-"
+    },
+    {
+      "index": 19,
+      "ok": true,
+      "elapsed": 0.9181332588195801,
+      "prompt_tokens": 26,
+      "completion_tokens": 26,
+      "content": "```json\n{\n  \"name\": \"llama\",\n  \"type\": \"server\"\n}\n```"
+    },
+    {
+      "index": 20,
+      "ok": true,
+      "elapsed": 1.790170431137085,
+      "prompt_tokens": 24,
+      "completion_tokens": 40,
+      "content": "MTP（多令牌预测）是一种让大语言模型在生成当前词的同时，并行预测未来多个后续词的机制，旨在通过增加训练信号密度来提升模型的收敛速度和推理效率。"
+    },
+    {
+      "index": 21,
+      "ok": true,
+      "elapsed": 1.5787572860717773,
+      "prompt_tokens": 22,
+      "completion_tokens": 42,
+      "content": "ROCm (Radeon Open Compute Platform) is an open-source software stack developed by AMD that enables high-performance computing and GPU acceleration for AI, data science, and HPC workloads on AMD hardware."
+    },
+    {
+      "index": 22,
+      "ok": true,
+      "elapsed": 1.411170244216919,
+      "prompt_tokens": 27,
+      "completion_tokens": 50,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 23,
+      "ok": true,
+      "elapsed": 3.3359055519104004,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小的 Shell 命令\n\n## 推荐命令\n\n```bash\nls -lhS\n```\n\n### 参数说明：\n| 参数 | 含义 |\n|------|------|\n| `-l` | 长格式列出详细信息（包含文件大小） |\n| `-h` | 以人类可读的方式显示大小（如 K、M、G） |\n| `-S` | 按文件大小从大到小排序 |\n\n---\n\n## 其他常用方式\n\n### 1. 仅显示文件名和大小（简洁输出）\n```bash\nls -lh"
+    },
+    {
+      "index": 24,
+      "ok": true,
+      "elapsed": 0.9294333457946777,
+      "prompt_tokens": 26,
+      "completion_tokens": 26,
+      "content": "```json\n{\n  \"name\": \"llama\",\n  \"type\": \"server\"\n}\n```"
+    },
+    {
+      "index": 25,
+      "ok": true,
+      "elapsed": 1.86269211769104,
+      "prompt_tokens": 24,
+      "completion_tokens": 37,
+      "content": "MTP 是一种让大语言模型在生成当前词的同时，并行预测后续多个词的辅助训练技术，旨在通过增加有效学习信号来提升模型的训练效率和推理性能。"
+    },
+    {
+      "index": 26,
+      "ok": true,
+      "elapsed": 1.637012004852295,
+      "prompt_tokens": 22,
+      "completion_tokens": 39,
+      "content": "ROCm (Radeon Open Compute Platform) is AMD's open software ecosystem designed to enable GPU computing for high-performance and data center applications, serving as a competitor to NVIDIA’s CUDA platform."
+    },
+    {
+      "index": 27,
+      "ok": true,
+      "elapsed": 1.514542818069458,
+      "prompt_tokens": 27,
+      "completion_tokens": 54,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"接收一个整数列表并返回其平均值。\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 28,
+      "ok": true,
+      "elapsed": 3.4965832233428955,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "你可以使用以下 `ls` 命令来查看当前目录下所有文件的大小：\n\n```bash\nls -lhS\n```\n\n### 参数说明：\n- `-l`：以长格式显示详细信息（包括文件大小、权限、所有者等）。\n- `-h`：以人类可读的格式显示文件大小（如 KB、MB、GB），而不是字节。\n- `-S`：按文件大小排序，最大的文件排在前面（可选，方便快速定位大文件）。\n\n### 其他常用变体：\n1. **仅显示文件名和大小（更简洁）**：\n   ```bash\n   ls"
+    },
+    {
+      "index": 29,
+      "ok": true,
+      "elapsed": 0.9022550582885742,
+      "prompt_tokens": 26,
+      "completion_tokens": 26,
+      "content": "```json\n{\n  \"name\": \"llama\",\n  \"type\": \"server\"\n}\n```"
+    },
+    {
+      "index": 30,
+      "ok": true,
+      "elapsed": 1.7743618488311768,
+      "prompt_tokens": 24,
+      "completion_tokens": 42,
+      "content": "MTP（多令牌预测）是一种让大语言模型在生成当前词的同时，并行预测后续多个词的机制，旨在通过增加单次前向传播的信息量来显著提升训练与推理效率。"
+    },
+    {
+      "index": 31,
+      "ok": true,
+      "elapsed": 1.7642862796783447,
+      "prompt_tokens": 22,
+      "completion_tokens": 44,
+      "content": "ROCm (Radeon Open Compute Platform) is an open-source software stack developed by AMD that enables high-performance computing and GPU acceleration for data centers, workstations, and supercomputers using AMD graphics processing units."
+    },
+    {
+      "index": 32,
+      "ok": true,
+      "elapsed": 1.4234859943389893,
+      "prompt_tokens": 27,
+      "completion_tokens": 50,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 33,
+      "ok": true,
+      "elapsed": 3.315387487411499,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小\n\n## 常用命令\n\n### 1. `ls -lh`（最常用）\n```bash\nls -lh\n```\n- `-l`：长格式显示，包含文件大小、权限、所有者等信息\n- `-h`：以人类可读的格式显示大小（如 KB、MB、GB）\n\n**示例输出：**\n```\n-rw-r--r-- 1 user group 4.2K Mar 10 10:30 file1.txt\ndrwxr-xr-x 2 user group 4.0K Mar 1"
+    },
+    {
+      "index": 34,
+      "ok": true,
+      "elapsed": 0.6570758819580078,
+      "prompt_tokens": 26,
+      "completion_tokens": 11,
+      "content": "{\"name\":\"llama\",\"type\":\"server\"}"
+    },
+    {
+      "index": 35,
+      "ok": true,
+      "elapsed": 1.743635654449463,
+      "prompt_tokens": 24,
+      "completion_tokens": 40,
+      "content": "MTP（多令牌预测）是一种让语言模型在生成当前词的同时，并行预测后续多个词的技术，旨在通过增加单次前向传播的信息量来提升训练效率和推理速度。"
+    },
+    {
+      "index": 36,
+      "ok": true,
+      "elapsed": 1.4623336791992188,
+      "prompt_tokens": 22,
+      "completion_tokens": 39,
+      "content": "ROCm (Radeon Open Compute platform) is an open-source software stack developed by AMD that enables high-performance computing and GPU acceleration for data centers, workstations, and supercomputers."
+    },
+    {
+      "index": 37,
+      "ok": true,
+      "elapsed": 2.388385772705078,
+      "prompt_tokens": 27,
+      "completion_tokens": 98,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"\n    计算整数列表的平均值。\n    \n    Args:\n        numbers: 整数列表\n        \n    Returns:\n        列表元素的平均值（浮点数）\n        \n    Raises:\n        ValueError: 当列表为空时抛出异常\n    \"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 38,
+      "ok": true,
+      "elapsed": 3.5069665908813477,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小的 Shell 命令\n\n## 推荐命令\n\n```bash\nls -lhS\n```\n\n### 参数说明：\n| 参数 | 含义 |\n|------|------|\n| `-l` | 长格式显示（包含文件大小、权限、所有者等详细信息） |\n| `-h` | 以人类可读的方式显示大小（如 K、M、G） |\n| `-S` | 按文件大小降序排列 |\n\n---\n\n## 其他常用变体\n\n### 1. 仅显示文件名和大小\n```bash\nls -"
+    },
+    {
+      "index": 39,
+      "ok": true,
+      "elapsed": 0.6612937450408936,
+      "prompt_tokens": 26,
+      "completion_tokens": 11,
+      "content": "{\"name\":\"llama\",\"type\":\"server\"}"
+    },
+    {
+      "index": 40,
+      "ok": true,
+      "elapsed": 1.7298800945281982,
+      "prompt_tokens": 24,
+      "completion_tokens": 40,
+      "content": "MTP（多令牌预测）是一种让语言模型在生成当前词的同时，并行预测后续多个词的技术，旨在通过增加单次前向传播的信息量来提升训练效率和推理速度。"
+    },
+    {
+      "index": 41,
+      "ok": true,
+      "elapsed": 1.8130300045013428,
+      "prompt_tokens": 22,
+      "completion_tokens": 44,
+      "content": "ROCm (Radeon Open Compute Platform) is an open software stack developed by AMD that enables high-performance computing and GPU acceleration for AI, HPC, and data science workloads on Radeon and Instinct processors."
+    },
+    {
+      "index": 42,
+      "ok": true,
+      "elapsed": 1.579695224761963,
+      "prompt_tokens": 27,
+      "completion_tokens": 50,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 43,
+      "ok": true,
+      "elapsed": 3.3957858085632324,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小\n\n## 常用命令\n\n### 1. `ls -lh`（最简洁）\n```bash\nls -lh\n```\n- `-l`：长格式显示，包含文件大小\n- `-h`：以人类可读的格式显示大小（如 KB、MB、GB）\n\n**示例输出：**\n```\n-rw-r--r-- 1 user group 4.2K Mar 10 10:30 file1.txt\ndrwxr-xr-x 2 user group 4.0K Mar 10 10:"
+    },
+    {
+      "index": 44,
+      "ok": true,
+      "elapsed": 0.9336137771606445,
+      "prompt_tokens": 26,
+      "completion_tokens": 26,
+      "content": "```json\n{\n  \"name\": \"llama\",\n  \"type\": \"server\"\n}\n```"
+    },
+    {
+      "index": 45,
+      "ok": true,
+      "elapsed": 1.7399828433990479,
+      "prompt_tokens": 24,
+      "completion_tokens": 41,
+      "content": "MTP（多令牌预测）是一种让大语言模型在生成当前词的同时，并行预测后续多个词的技术，旨在通过增加单次前向传播的信息量来提升训练效率和推理速度。"
+    },
+    {
+      "index": 46,
+      "ok": true,
+      "elapsed": 1.6949193477630615,
+      "prompt_tokens": 22,
+      "completion_tokens": 41,
+      "content": "ROCm (Radeon Open Compute Platform) is AMD's open-source software ecosystem designed to enable high-performance computing and GPU acceleration for data centers, workstations, and supercomputers using AMD GPUs."
+    },
+    {
+      "index": 47,
+      "ok": true,
+      "elapsed": 1.418276071548462,
+      "prompt_tokens": 27,
+      "completion_tokens": 50,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 48,
+      "ok": true,
+      "elapsed": 3.434032917022705,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小\n\n## 常用命令\n\n### 1. `ls -lh`（最简洁）\n```bash\nls -lh\n```\n- `-l`：长格式显示，包含文件大小\n- `-h`：人类可读格式（如 KB、MB、GB）\n\n示例输出：\n```\n-rw-r--r-- 1 user group 4.2K Apr 10 10:30 file1.txt\ndrwxr-xr-x 2 user group 4.0K Apr 10 10:30 dir1\n"
+    },
+    {
+      "index": 49,
+      "ok": true,
+      "elapsed": 0.9048941135406494,
+      "prompt_tokens": 26,
+      "completion_tokens": 26,
+      "content": "```json\n{\n  \"name\": \"llama\",\n  \"type\": \"server\"\n}\n```"
+    },
+    {
+      "index": 50,
+      "ok": true,
+      "elapsed": 1.7690467834472656,
+      "prompt_tokens": 24,
+      "completion_tokens": 40,
+      "content": "MTP（多令牌预测）是一种让大语言模型在生成当前词的同时，并行预测后续多个词的技术，旨在通过增加单次前向传播的信息量来显著提升推理速度。"
+    },
+    {
+      "index": 51,
+      "ok": true,
+      "elapsed": 1.6023805141448975,
+      "prompt_tokens": 22,
+      "completion_tokens": 44,
+      "content": "ROCm (Radeon Open Compute Platform) is an open-source software stack developed by AMD that enables high-performance computing and GPU acceleration for a variety of workloads, including AI, machine learning, and scientific simulations."
+    },
+    {
+      "index": 52,
+      "ok": true,
+      "elapsed": 1.3983893394470215,
+      "prompt_tokens": 27,
+      "completion_tokens": 50,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 53,
+      "ok": true,
+      "elapsed": 3.601565361022949,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小\n\n## 推荐命令\n\n```bash\nls -lhS\n```\n\n### 参数说明：\n| 参数 | 含义 |\n|------|------|\n| `-l` | 长格式显示（包含权限、所有者、大小等信息） |\n| `-h` | 以人类可读的方式显示文件大小（如 K、M、G） |\n| `-S` | 按文件大小降序排序（最大的文件排在前面） |\n\n---\n\n## 其他常用方式\n\n### 1. 仅显示文件名和大小（简洁版）\n```"
+    },
+    {
+      "index": 54,
+      "ok": true,
+      "elapsed": 0.9167485237121582,
+      "prompt_tokens": 26,
+      "completion_tokens": 26,
+      "content": "```json\n{\n  \"name\": \"llama\",\n  \"type\": \"server\"\n}\n```"
+    },
+    {
+      "index": 55,
+      "ok": true,
+      "elapsed": 1.6151068210601807,
+      "prompt_tokens": 24,
+      "completion_tokens": 42,
+      "content": "MTP（多令牌预测）是一种让大语言模型在一次前向传播中同时预测未来多个后续词元的训练技术，旨在通过增加计算效率来加速推理速度并提升模型性能。"
+    },
+    {
+      "index": 56,
+      "ok": true,
+      "elapsed": 1.6957271099090576,
+      "prompt_tokens": 22,
+      "completion_tokens": 43,
+      "content": "ROCm (Radeon Open Compute Platform) is an open-source software stack developed by AMD to enable high-performance computing and GPU acceleration for its graphics cards, serving as a competitive alternative to NVIDIA's CUDA ecosystem."
+    },
+    {
+      "index": 57,
+      "ok": true,
+      "elapsed": 1.4913983345031738,
+      "prompt_tokens": 27,
+      "completion_tokens": 51,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值。\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 58,
+      "ok": true,
+      "elapsed": 3.7649121284484863,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小\n\n## 常用方法\n\n### 1. `ls` + `du` 组合（推荐）\n\n```bash\ndu -sh *\n```\n\n- `-s`：汇总每个文件或目录的总大小\n- `-h`：以人类可读格式显示（如 K、M、G）\n- `*`：匹配当前目录下所有文件和子目录\n\n### 2. 仅查看文件（排除目录）\n\n```bash\nls -lh --block-size=1 | awk '{print $5, $9}'\n```\n\n或更简洁的方式：\n\n"
+    },
+    {
+      "index": 59,
+      "ok": true,
+      "elapsed": 0.6564714908599854,
+      "prompt_tokens": 26,
+      "completion_tokens": 11,
+      "content": "{\"name\":\"llama\",\"type\":\"server\"}"
+    },
+    {
+      "index": 60,
+      "ok": true,
+      "elapsed": 1.712148904800415,
+      "prompt_tokens": 24,
+      "completion_tokens": 42,
+      "content": "MTP（多令牌预测）是一种让大语言模型在生成当前词的同时，并行预测后续多个词的技术，旨在通过“投机性解码”显著加速推理过程并降低计算成本。"
+    },
+    {
+      "index": 61,
+      "ok": true,
+      "elapsed": 1.484276533126831,
+      "prompt_tokens": 22,
+      "completion_tokens": 38,
+      "content": "ROCm (Radeon Open Compute Platform) is an open-source software stack developed by AMD that enables high-performance computing and GPU acceleration for data centers, workstations, and embedded systems."
+    },
+    {
+      "index": 62,
+      "ok": true,
+      "elapsed": 1.254563331604004,
+      "prompt_tokens": 27,
+      "completion_tokens": 41,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 63,
+      "ok": true,
+      "elapsed": 3.4043004512786865,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小的 Shell 命令\n\n## 常用方法\n\n### 1. `ls -lh`（最简洁）\n```bash\nls -lh\n```\n- `-l`：长格式列出详细信息\n- `-h`：以人类可读的方式显示大小（如 KB、MB、GB）\n\n**示例输出：**\n```\n-rw-r--r-- 1 user group 4.2K Mar 10 10:30 file1.txt\ndrwxr-xr-x 2 user group 4.0K Mar 10 10"
+    },
+    {
+      "index": 64,
+      "ok": true,
+      "elapsed": 0.6929268836975098,
+      "prompt_tokens": 26,
+      "completion_tokens": 16,
+      "content": "```json\n{\"name\":\"llama\",\"type\":\"server\"}\n```"
+    },
+    {
+      "index": 65,
+      "ok": true,
+      "elapsed": 1.7552433013916016,
+      "prompt_tokens": 24,
+      "completion_tokens": 43,
+      "content": "MTP（多令牌预测）是一种让大语言模型在生成当前词的同时，并行预测后续多个词的技术，旨在通过“投机性解码”大幅减少推理步数从而提升生成速度。"
+    },
+    {
+      "index": 66,
+      "ok": true,
+      "elapsed": 1.7057621479034424,
+      "prompt_tokens": 22,
+      "completion_tokens": 41,
+      "content": "ROCm (Radeon Open Compute Platform) is an open software stack developed by AMD that enables high-performance computing and GPU acceleration for data centers, workstations, and supercomputers using AMD GPUs."
+    },
+    {
+      "index": 67,
+      "ok": true,
+      "elapsed": 1.4210803508758545,
+      "prompt_tokens": 27,
+      "completion_tokens": 50,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 68,
+      "ok": true,
+      "elapsed": 3.316200017929077,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小的 Shell 命令\n\n## 常用方法\n\n### 1. `ls -lh`（最简洁）\n```bash\nls -lh\n```\n- `-l`：长格式列出详细信息\n- `-h`：以人类可读的格式显示大小（如 K、M、G）\n\n**示例输出：**\n```\n-rw-r--r-- 1 user group 4.2K Apr 10 10:30 file1.txt\ndrwxr-xr-x 2 user group 4.0K Apr 10 1"
+    },
+    {
+      "index": 69,
+      "ok": true,
+      "elapsed": 0.9217925071716309,
+      "prompt_tokens": 26,
+      "completion_tokens": 26,
+      "content": "```json\n{\n  \"name\": \"llama\",\n  \"type\": \"server\"\n}\n```"
+    },
+    {
+      "index": 70,
+      "ok": true,
+      "elapsed": 1.5925078392028809,
+      "prompt_tokens": 24,
+      "completion_tokens": 42,
+      "content": "MTP（多令牌预测）是一种让大语言模型在一次前向传播中同时预测当前词及后续多个未来词的并行解码技术，旨在通过减少推理步数来显著提升生成速度。"
+    },
+    {
+      "index": 71,
+      "ok": true,
+      "elapsed": 1.4766006469726562,
+      "prompt_tokens": 22,
+      "completion_tokens": 38,
+      "content": "ROCm (Radeon Open Compute Platform) is an open-source software stack developed by AMD that enables high-performance computing and GPU acceleration for data centers, workstations, and embedded systems."
+    },
+    {
+      "index": 72,
+      "ok": true,
+      "elapsed": 1.3984885215759277,
+      "prompt_tokens": 27,
+      "completion_tokens": 50,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 73,
+      "ok": true,
+      "elapsed": 3.818021059036255,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小\n\n## 常用命令\n\n```bash\nls -lhS --sort=size\n```\n\n或更精确地显示每个文件的实际大小：\n\n```bash\ndu -ah --max-depth=1 | sort -hr\n```\n\n## 各选项说明\n\n### 方法一：`ls` 方式（简洁直观）\n| 选项 | 含义 |\n|------|------|\n| `-l` | 长格式显示，包含文件大小、权限等信息 |\n| `-h` | 人类可读格式（如 KB、MB、GB） |\n| `-"
+    },
+    {
+      "index": 74,
+      "ok": true,
+      "elapsed": 0.6319098472595215,
+      "prompt_tokens": 26,
+      "completion_tokens": 11,
+      "content": "{\"name\":\"llama\",\"type\":\"server\"}"
+    },
+    {
+      "index": 75,
+      "ok": true,
+      "elapsed": 1.3761875629425049,
+      "prompt_tokens": 24,
+      "completion_tokens": 38,
+      "content": "MTP（多令牌预测）是一种通过让模型在生成当前词的同时并行预测未来多个后续词，从而显著提升训练效率并增强对长程依赖理解能力的技术。"
+    },
+    {
+      "index": 76,
+      "ok": true,
+      "elapsed": 1.4674596786499023,
+      "prompt_tokens": 22,
+      "completion_tokens": 38,
+      "content": "ROCm (Radeon Open Compute Platform) is an open-source software stack developed by AMD that enables high-performance computing and GPU acceleration for data centers, workstations, and embedded systems."
+    },
+    {
+      "index": 77,
+      "ok": true,
+      "elapsed": 1.405961036682129,
+      "prompt_tokens": 27,
+      "completion_tokens": 50,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 78,
+      "ok": true,
+      "elapsed": 3.800020456314087,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小\n\n## 常用命令\n\n### 1. `ls -lh` — 简洁列出文件大小（人类可读格式）\n\n```bash\nls -lh\n```\n\n- `-l`：长格式显示详细信息\n- `-h`：以易读的单位显示大小（如 K、M、G）\n\n**示例输出：**\n```\ntotal 48K\n-rw-r--r-- 1 user group  4.0K Mar 10 10:00 file1.txt\n-rw-r--r-- 1 user group   2"
+    },
+    {
+      "index": 79,
+      "ok": true,
+      "elapsed": 0.9071598052978516,
+      "prompt_tokens": 26,
+      "completion_tokens": 26,
+      "content": "```json\n{\n  \"name\": \"llama\",\n  \"type\": \"server\"\n}\n```"
+    },
+    {
+      "index": 80,
+      "ok": true,
+      "elapsed": 1.7554614543914795,
+      "prompt_tokens": 24,
+      "completion_tokens": 42,
+      "content": "MTP（多令牌预测）是一种让大语言模型在生成当前词的同时，并行预测后续多个词的机制，旨在通过增加单次前向传播的信息量来提升训练效率与推理速度。"
+    },
+    {
+      "index": 81,
+      "ok": true,
+      "elapsed": 1.5363738536834717,
+      "prompt_tokens": 22,
+      "completion_tokens": 41,
+      "content": "ROCm (Radeon Open Compute Platform) is an open-source software stack by AMD that enables high-performance computing and GPU acceleration for data centers, workstations, and supercomputers using AMD GPUs."
+    },
+    {
+      "index": 82,
+      "ok": true,
+      "elapsed": 1.4241857528686523,
+      "prompt_tokens": 27,
+      "completion_tokens": 50,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 83,
+      "ok": true,
+      "elapsed": 3.3411569595336914,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小\n\n## 常用命令\n\n```bash\nls -lhS\n```\n\n### 参数说明：\n| 参数 | 含义 |\n|------|------|\n| `-l` | 长格式显示，包含文件大小、权限、所有者等信息 |\n| `-h` | 以人类可读的格式显示大小（如 KB、MB、GB） |\n| `-S` | 按文件大小降序排列 |\n\n---\n\n## 其他实用变体\n\n### 1. 仅显示文件名和大小，更简洁\n```bash\nls -lh --"
+    },
+    {
+      "index": 84,
+      "ok": true,
+      "elapsed": 0.6552653312683105,
+      "prompt_tokens": 26,
+      "completion_tokens": 11,
+      "content": "{\"name\":\"llama\",\"type\":\"server\"}"
+    },
+    {
+      "index": 85,
+      "ok": true,
+      "elapsed": 1.389200210571289,
+      "prompt_tokens": 24,
+      "completion_tokens": 37,
+      "content": "MTP（多令牌预测）是一种让大语言模型在生成当前词的同时，并行预测后续多个词的技术，旨在通过减少串行推理步骤来显著提升推理速度。"
+    },
+    {
+      "index": 86,
+      "ok": true,
+      "elapsed": 1.5780754089355469,
+      "prompt_tokens": 22,
+      "completion_tokens": 42,
+      "content": "ROCm (Radeon Open Compute Platform) is an open-source software stack developed by AMD that enables high-performance computing and GPU acceleration for data centers, workstations, and supercomputers using AMD GPUs."
+    },
+    {
+      "index": 87,
+      "ok": true,
+      "elapsed": 1.3994414806365967,
+      "prompt_tokens": 27,
+      "completion_tokens": 50,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 88,
+      "ok": true,
+      "elapsed": 3.3681139945983887,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小\n\n## 常用命令\n\n```bash\nls -lhS\n```\n\n### 参数说明：\n| 参数 | 含义 |\n|------|------|\n| `-l` | 长格式列出详细信息（包含文件大小） |\n| `-h` | 以人类可读的格式显示大小（如 KB、MB、GB） |\n| `-S` | 按文件大小从大到小排序 |\n\n---\n\n## 其他常用变体\n\n### 1. 仅显示文件名和大小，更简洁\n```bash\nls -lh --sort=size"
+    },
+    {
+      "index": 89,
+      "ok": true,
+      "elapsed": 0.6437065601348877,
+      "prompt_tokens": 26,
+      "completion_tokens": 11,
+      "content": "{\"name\":\"llama\",\"type\":\"server\"}"
+    },
+    {
+      "index": 90,
+      "ok": true,
+      "elapsed": 1.6883034706115723,
+      "prompt_tokens": 24,
+      "completion_tokens": 48,
+      "content": "MTP（多令牌预测）是一种大模型训练技术，通过让模型在单步前向传播中同时预测当前及未来多个时间步的标记，从而显著提升训练效率并增强模型的长程依赖建模能力。"
+    },
+    {
+      "index": 91,
+      "ok": true,
+      "elapsed": 1.5914011001586914,
+      "prompt_tokens": 22,
+      "completion_tokens": 36,
+      "content": "ROCm (Radeon Open Compute Platform) is an open software stack developed by AMD that enables high-performance computing and GPU acceleration for data center, workstation, and embedded applications."
+    },
+    {
+      "index": 92,
+      "ok": true,
+      "elapsed": 1.377354383468628,
+      "prompt_tokens": 27,
+      "completion_tokens": 50,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 93,
+      "ok": true,
+      "elapsed": 3.484006404876709,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小\n\n## 常用方法\n\n### 1. `ls -lh`（最简洁）\n```bash\nls -lh\n```\n- `-l`：长格式显示，包含文件大小\n- `-h`：人类可读格式（如 KB、MB、GB）\n\n**示例输出：**\n```\n-rw-r--r-- 1 user group  4.2K Mar 10 10:30 file1.txt\ndrwxr-xr-x 2 user group 4.0K Mar 10 10:30 dir"
+    },
+    {
+      "index": 94,
+      "ok": true,
+      "elapsed": 0.6293356418609619,
+      "prompt_tokens": 26,
+      "completion_tokens": 11,
+      "content": "{\"name\":\"llama\",\"type\":\"server\"}"
+    },
+    {
+      "index": 95,
+      "ok": true,
+      "elapsed": 1.300459384918213,
+      "prompt_tokens": 24,
+      "completion_tokens": 32,
+      "content": "MTP（多令牌预测）是一种通过让模型在生成当前词的同时并行预测后续多个词，从而显著提升训练效率和推理速度的技术。"
+    },
+    {
+      "index": 96,
+      "ok": true,
+      "elapsed": 1.6066157817840576,
+      "prompt_tokens": 22,
+      "completion_tokens": 39,
+      "content": "ROCm (Radeon Open Compute Platform) is AMD's open software stack for GPU computing, designed to enable high-performance and general-purpose computing on Radeon GPUs similar to NVIDIA's CUDA ecosystem."
+    },
+    {
+      "index": 97,
+      "ok": true,
+      "elapsed": 1.384882926940918,
+      "prompt_tokens": 27,
+      "completion_tokens": 50,
+      "content": "```python\ndef average(numbers: list[int]) -> float:\n    \"\"\"计算整数列表的平均值\"\"\"\n    if not numbers:\n        raise ValueError(\"列表不能为空\")\n    return sum(numbers) / len(numbers)\n```"
+    },
+    {
+      "index": 98,
+      "ok": true,
+      "elapsed": 3.418389081954956,
+      "prompt_tokens": 24,
+      "completion_tokens": 128,
+      "content": "# 查看当前目录下所有文件大小的 Shell 命令\n\n## 常用方法\n\n### 1. `ls` 命令（简洁直观）\n\n```bash\nls -lhS\n```\n\n- `-l`：长格式显示，包含文件大小\n- `-h`：人类可读格式（如 KB、MB、GB）\n- `-S`：按文件大小降序排序\n\n### 2. `du` 命令（更精确，含子目录汇总）\n\n```bash\ndu -ah --max-depth=1 | sort -hr\n```\n\n- `-a`：显示所有文件和目录\n"
+    },
+    {
+      "index": 99,
+      "ok": true,
+      "elapsed": 0.9006221294403076,
+      "prompt_tokens": 26,
+      "completion_tokens": 26,
+      "content": "```json\n{\n  \"name\": \"llama\",\n  \"type\": \"server\"\n}\n```"
+    }
+  ]
+}

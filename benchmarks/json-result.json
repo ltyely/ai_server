@@ -1,0 +1,360 @@
+{
+  "summary": {
+    "count": 50,
+    "valid_json": 50,
+    "valid_rate": 1.0,
+    "success": 50
+  },
+  "results": [
+    {
+      "index": 0,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 1,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 2,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 3,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 4,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 5,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 6,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 7,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 8,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 9,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 10,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 11,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 12,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 13,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 14,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 15,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 16,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 17,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 18,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 19,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 20,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 21,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 22,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 23,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 24,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 25,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 26,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 27,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 28,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 29,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 30,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 31,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 32,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 33,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 34,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 35,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 36,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 37,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 38,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 39,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 40,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 41,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 42,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 43,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 44,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 45,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 46,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    },
+    {
+      "index": 47,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}",
+      "detail": "{\"name\":\"Qwen3.6\",\"params\":\"27B\"}"
+    },
+    {
+      "index": 48,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}",
+      "detail": "{\"tool\":\"calculator\",\"args\":{\"a\":1,\"b\":2}}"
+    },
+    {
+      "index": 49,
+      "ok": true,
+      "valid_json": true,
+      "content": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}",
+      "detail": "{\"action\":\"search\",\"query\":\"ROCm 7.2\"}"
+    }
+  ]
+}

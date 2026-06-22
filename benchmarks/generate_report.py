@@ -51,7 +51,7 @@ def main():
         "- GPU: Radeon RX 7900 XTX (gfx1100)",
         "- VRAM: 24560 MB",
         "- ROCm: 7.2.2 (当前环境未安装 7.14 / TheRock)",
-        "- llama.cpp commit: 81df3f7cf",
+        "- llama.cpp commit: 721354fbdfb7743e2be2183d918a3cdb9276c70f",
         "- Model: qwen36-27b-daily-mtp-65k",
         "",
         "## 短请求测试 (100 次)",

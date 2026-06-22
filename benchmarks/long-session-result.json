@@ -1,0 +1,114 @@
+{
+  "summary": {
+    "rounds": 14,
+    "successful_rounds": 14,
+    "final_total_tokens": 60630,
+    "reached_levels": [
+      40000,
+      50000,
+      60000
+    ],
+    "mean_elapsed": 20.96146191869463,
+    "max_elapsed": 24.59891653060913
+  },
+  "results": [
+    {
+      "round": 1,
+      "ok": true,
+      "elapsed": 16.35595965385437,
+      "total_tokens": 4276,
+      "content_preview": "基于之前的对话上下文（第1轮），以下是关键信息总结及补充建议：\n\n### 关键信息复述\n*   **测试场景**：人工智能本地推理后端部署测试。\n*   **使用模型**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gguf`（注：这是一个基于 Qwen 架构的 27B 参数量化模型，启用了 MTP 多令牌预测功能）。\n*   **核心"
+    },
+    {
+      "round": 2,
+      "ok": true,
+      "elapsed": 16.78704023361206,
+      "total_tokens": 8514,
+      "content_preview": "基于之前的对话上下文（第1轮和第2轮），以下是关键信息总结及补充建议：\n\n### 关键信息复述\n*   **测试场景**：持续进行人工智能本地推理后端部署测试。\n*   **使用模型**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gguf`（27B参数，Q4量化，启用MTP多令牌预测）。\n*   **核心技术**：启用 `draft-"
+    },
+    {
+      "round": 3,
+      "ok": true,
+      "elapsed": 17.660390853881836,
+      "total_tokens": 12796,
+      "content_preview": "基于之前的对话上下文（第1轮、第2轮和第3轮），以下是关键信息总结及补充建议：\n\n### 关键信息复述\n*   **测试场景**：持续进行人工智能本地推理后端部署测试。\n*   **使用模型**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gguf`（27B参数，Q4量化，启用MTP多令牌预测）。\n*   **核心技术**：启用 `dr"
+    },
+    {
+      "round": 4,
+      "ok": true,
+      "elapsed": 17.81253170967102,
+      "total_tokens": 17054,
+      "content_preview": "基于之前的对话上下文（第1轮至第4轮），以下是关键信息总结及补充建议：\n\n### 关键信息复述\n*   **测试场景**：持续进行人工智能本地推理后端部署测试。\n*   **使用模型**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gguf`（27B参数，Q4量化，启用MTP多令牌预测）。\n*   **核心技术**：启用 `draft-"
+    },
+    {
+      "round": 5,
+      "ok": true,
+      "elapsed": 19.432137727737427,
+      "total_tokens": 21364,
+      "content_preview": "基于之前的对话上下文（第1轮至第5轮），以下是关键信息总结及补充建议：\n\n### 关键信息复述\n*   **测试场景**：持续进行人工智能本地推理后端部署测试。\n*   **使用模型**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gguf`（27B参数，Q4量化，启用MTP多令牌预测）。\n*   **核心技术**：启用 `draft-"
+    },
+    {
+      "round": 6,
+      "ok": true,
+      "elapsed": 20.720383882522583,
+      "total_tokens": 25691,
+      "content_preview": "基于之前的对话上下文（第1轮至第6轮），以下是关键信息总结及补充建议：\n\n### 关键信息复述\n*   **测试场景**：持续进行人工智能本地推理后端部署测试。\n*   **使用模型**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gguf`（27B参数，Q4量化，启用MTP多令牌预测）。\n*   **核心技术**：启用 `draft-"
+    },
+    {
+      "round": 7,
+      "ok": true,
+      "elapsed": 22.123890161514282,
+      "total_tokens": 30057,
+      "content_preview": "基于之前的对话上下文（第1轮至第7轮），以下是关键信息总结及补充建议：\n\n### 关键信息复述\n*   **测试场景**：持续进行人工智能本地推理后端部署测试。\n*   **使用模型**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gguf`（27B参数，Q4量化，启用MTP多令牌预测）。\n*   **核心技术**：启用 `draft-"
+    },
+    {
+      "round": 8,
+      "ok": true,
+      "elapsed": 22.272943019866943,
+      "total_tokens": 34424,
+      "content_preview": "基于之前的对话上下文（第1轮至第8轮），以下是关键信息总结及补充建议：\n\n### 关键信息复述\n*   **测试场景**：持续进行人工智能本地推理后端部署测试。\n*   **使用模型**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gguf`（27B参数，Q4量化，启用MTP多令牌预测）。\n*   **核心技术**：启用 `draft-"
+    },
+    {
+      "round": 9,
+      "ok": true,
+      "elapsed": 22.208285093307495,
+      "total_tokens": 38790,
+      "content_preview": "基于之前的对话上下文（第1轮至第9轮），以下是关键信息总结及补充建议：\n\n### 关键信息复述\n*   **测试场景**：持续进行人工智能本地推理后端部署测试。\n*   **使用模型**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gguf`（27B参数，Q4量化，启用MTP多令牌预测）。\n*   **核心技术**：启用 `draft-"
+    },
+    {
+      "round": 10,
+      "ok": true,
+      "elapsed": 23.04151701927185,
+      "total_tokens": 43158,
+      "content_preview": "基于之前的对话上下文（第1轮至第10轮），以下是关键信息总结及补充建议：\n\n### 关键信息复述\n*   **测试场景**：持续进行人工智能本地推理后端部署测试。\n*   **使用模型**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gguf`（27B参数，Q4量化，启用MTP多令牌预测）。\n*   **核心技术**：启用 `draft"
+    },
+    {
+      "round": 11,
+      "ok": true,
+      "elapsed": 23.36482000350952,
+      "total_tokens": 47526,
+      "content_preview": "基于之前的对话上下文（第1轮至第11轮），以下是关键信息总结及补充建议：\n\n### 关键信息复述\n*   **测试场景**：持续进行人工智能本地推理后端部署测试。\n*   **使用模型**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gguf`（27B参数，Q4量化，启用MTP多令牌预测）。\n*   **核心技术**：启用 `draft"
+    },
+    {
+      "round": 12,
+      "ok": true,
+      "elapsed": 23.355506420135498,
+      "total_tokens": 51894,
+      "content_preview": "基于之前的对话上下文（第1轮至第12轮），以下是关键信息总结及补充建议：\n\n### 关键信息复述\n*   **测试场景**：持续进行人工智能本地推理后端部署测试。\n*   **使用模型**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gguf`（27B参数，Q4量化，启用MTP多令牌预测）。\n*   **核心技术**：启用 `draft"
+    },
+    {
+      "round": 13,
+      "ok": true,
+      "elapsed": 23.726144552230835,
+      "total_tokens": 56262,
+      "content_preview": "基于之前的对话上下文（第1轮至第13轮），以下是关键信息总结及补充建议：\n\n### 关键信息复述\n*   **测试场景**：持续进行人工智能本地推理后端部署测试。\n*   **使用模型**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gguf`（27B参数，Q4量化，启用MTP多令牌预测）。\n*   **核心技术**：启用 `draft"
+    },
+    {
+      "round": 14,
+      "ok": true,
+      "elapsed": 24.59891653060913,
+      "total_tokens": 60630,
+      "content_preview": "基于之前的对话上下文（第1轮至第14轮），以下是关键信息总结及补充建议：\n\n### 关键信息复述\n*   **测试场景**：持续进行人工智能本地推理后端部署测试。\n*   **使用模型**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gguf`（27B参数，Q4量化，启用MTP多令牌预测）。\n*   **核心技术**：启用 `draft"
+    }
+  ]
+}
