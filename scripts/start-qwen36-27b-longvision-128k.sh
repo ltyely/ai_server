@@ -14,9 +14,9 @@ export LD_LIBRARY_PATH="/home/yi/data/ai_server/bin:${LD_LIBRARY_PATH:-}"
 exec /home/yi/data/ai_server/bin/llama-server \
   -m /home/yi/data/ai_server/models/qwen3.6-27b/longvision-128k/Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q5_K_P.gguf \
   --mmproj /home/yi/data/ai_server/models/qwen3.6-27b/longvision-128k/mmproj-Qwen3.6-27B-Uncensored-HauhauCS-Aggressive-f16.gguf \
+  --alias qwen36-27b-longvision-128k \
   --host 0.0.0.0 \
   --port 11436 \
-  --model qwen36-27b-longvision-128k \
   -c 131072 \
   --parallel 1 \
   -b 2048 \

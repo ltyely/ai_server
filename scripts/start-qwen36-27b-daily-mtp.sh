@@ -13,9 +13,9 @@ export LD_LIBRARY_PATH="/home/yi/data/ai_server/bin:${LD_LIBRARY_PATH:-}"
 
 exec /home/yi/data/ai_server/bin/llama-server \
   -m /home/yi/data/ai_server/models/qwen3.6-27b/daily-mtp-65k/Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gguf \
+  --alias qwen36-27b-daily-mtp-65k \
   --host 0.0.0.0 \
   --port 11435 \
-  --model qwen36-27b-daily-mtp-65k \
   -c 65536 \
   -fa 1 \
   --spec-type draft-mtp \
@@ -27,7 +27,6 @@ exec /home/yi/data/ai_server/bin/llama-server \
   --no-mmap \
   --tensor-split 0 \
   --reasoning off \
-  --swa-checkpoints 0 \
   --ctx-checkpoints 69 \
   --repeat-penalty 1.1 \
   --repeat-last-n 64 \
