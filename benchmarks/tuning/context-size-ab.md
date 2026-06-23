@@ -1,7 +1,9 @@
-# daily-mtp-65k context size A/B 测试报告
+:# daily-mtp-65k context size A/B 测试报告
 
-> 任务来源：`/home/yi/data/workspace/inbox/local_llm/task1.md`
-> 目标：对比 32K / 49K / 65K 三种 context size，判断 full prompt re-processing 是否影响真实 Agent 使用，补测 longvision-128k。
+> **状态**：stable-daily-mtp-65k-v1 已固化
+> **Git tag**：`stable-daily-mtp-65k-v1`
+> **任务来源**：`/home/yi/data/workspace/inbox/local_llm/task1.md`
+> **目标**：对比 32K / 49K / 65K 三种 context size，判断 full prompt re-processing 是否影响真实 Agent 使用，补测 longvision-128k。
 
 ## 测试方法
 
@@ -69,9 +71,11 @@
 - 在 24GB VRAM 的 RX 7900 XTX 上，longvision 无法同时满足 128K context + mmproj。
 - 即使降级到 64K/32K context，长文本 prefill 速度也不具备实用价值（<35 t/s 在 6K 以上 prompt）。
 
-#### 建议
+#### 结论与降级
 
-- 若需使用 longvision-128k，建议：
+- **longvision-128k 已降级为实验性后端，不作为备选默认服务。**
+- `llm-qwen36-27b-longvision-128k.service` 保持 `disabled` 状态。
+- 若未来硬件升级后需要重新评估，建议：
   - 升级到更大显存的 GPU（≥32GB）。
   - 或改用 Q4_K_P 量化版本（如果存在）。
   - 或仅用于短上下文/单图任务，并降低 context size 到 16K-32K。

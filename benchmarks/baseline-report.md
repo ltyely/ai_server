@@ -1,6 +1,8 @@
-# 基线测试报告
+:# 基线测试报告
 
-生成时间：2026-06-23T00:54:34.078677
+> **状态**：stable-daily-mtp-65k-v1 固化基线
+> **Git tag**：`stable-daily-mtp-65k-v1`
+> **生成时间**：2026-06-23T00:54:34.078677
 
 ## 测试环境
 
@@ -9,6 +11,7 @@
 - ROCm: 7.2.2 (当前环境未安装 7.14 / TheRock)
 - llama.cpp commit: 721354fbdfb7743e2be2183d918a3cdb9276c70f
 - Model: qwen36-27b-daily-mtp-65k
+- Context size: 65536（已固化）
 
 ## 关键性能指标（来自 server log）
 
@@ -62,3 +65,6 @@
 
 - JSON 解析率 >= 95%，通过最低验收。
 - 60K 上下文 TTFT 在可接受范围内。
+- **本基线对应 stable-daily-mtp-65k-v1，是唯一的默认后端推荐配置**。
+- full prompt re-processing 25 次主要来源于基线测试中 8K/16K/32K/60K 的频繁切换；真实 Agent 长会话（逐步累积）经 task1 A/B 测试验证不会触发。
+- longvision-128k 已被降级为实验性后端，不作为备选默认。
