@@ -16,7 +16,7 @@
 
 3. **systemd 服务安装**
    - 影响：当前 Agent 没有无密码 sudo 权限，`pkexec` 也无法在无图形认证代理环境下使用。
-   - 方案：用户提供 `SDTK` 环境变量中的 sudo 口令，完成服务安装与启用。
+   - 方案：用户提供 sudo 口令，完成服务安装与启用。
    - 状态：已解决。
      - `llm-qwen36-27b-daily-mtp.service`：已安装、已启用、已启动
      - `llm-qwen36-27b-longvision-128k.service`：已安装、已禁用

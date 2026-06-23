@@ -9,6 +9,7 @@ bin/
 bin-candidate/
 build/
 build-*/
+llama.cpp/
 llama.cpp/build/
 llama.cpp/build-*/
 *.o
