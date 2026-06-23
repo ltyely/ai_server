@@ -22,6 +22,7 @@
 | `issues.md` | 已知问题、风险与待确认事项 |
 | `change-log.md` | 每次保留的调优参数与版本变更 |
 | `work-report.md` | 最终工作报告与验收结果 |
+| `agent-usage-guide.md` | 给 Agent / 客户端开发者的调用指南 |
 
 ## 关键结论
 
