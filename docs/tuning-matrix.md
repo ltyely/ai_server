@@ -88,3 +88,21 @@ content empty
 2. 速度优化：llama.cpp commit A/B → KV q4_0/q4_0 vs q5_0/q4_1 → `--spec-draft-n-max` 2/3/4 → batch/ubatch → ROCm 7.14 vs 7.2。
 3. 质量优化：sampling → reasoning off/chat_template_kwargs → KV 精度 → context size。
 4. 备选能力：128K 启动 → 64K/100K/128K 测试 → mmproj 单图 → 图文混合 → 显存释放与服务切换。
+
+## Context Size A/B 结论（task1）
+
+- **推荐 daily-mtp-65k 默认 context size：65536（65K）**
+  - 在真实 Agent 长会话（逐步累积上下文）中，32K/49K/65K 均未触发 full prompt re-processing。
+  - 65K 最大单轮耗时 20.67s，远低于 120s 阈值。
+  - 65K 的 MTP 命中率最高（mean 0.758，p95 0.963）。
+  - TG speed 在三种配置下基本持平（43-45 t/s）。
+- **full prompt re-processing 触发场景**：
+  - 同一 slot 中上下文长度剧烈变化（如基线测试中 8K→16K→32K→60K 切换）。
+  - longvision 长 prompt 处理中也观察到触发。
+  - 真实 Agent 长会话（逐步增长）不易触发。
+- **longvision-128k 当前状态**：
+  - 24GB VRAM 无法同时承载 128K context + mmproj（OOM）。
+  - 64K/32K context 文本可启动，但长 prompt prefill 极慢（<35 t/s），不具实用价值。
+  - 如需使用 longvision，建议升级 GPU 显存或改用更低量化版本。
+
+详细数据见 `benchmarks/tuning/context-size-ab.md`。

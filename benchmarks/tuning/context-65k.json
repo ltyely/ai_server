@@ -1,0 +1,177 @@
+{
+  "ctx_size": 65536,
+  "target_tokens": 60000,
+  "rounds": 19,
+  "successful_rounds": 19,
+  "final_total_tokens": 62224,
+  "mean_round_elapsed": 16.841703665883916,
+  "max_round_elapsed": 20.669554710388184,
+  "ttft_ms": {
+    "count": 19,
+    "mean": 7276.281578947369,
+    "min": 4268.38,
+    "max": 10120.43,
+    "p95": 10120.43
+  },
+  "gen_tps": {
+    "count": 38,
+    "mean": 257.2181578947368,
+    "min": 36.22,
+    "max": 683.63,
+    "p95": 683.4
+  },
+  "tg_tps": {
+    "count": 50,
+    "mean": 45.3252,
+    "min": 37.33,
+    "max": 53.63,
+    "p95": 52.72
+  },
+  "mtp_acceptance": {
+    "count": 19,
+    "mean": 0.7580678947368421,
+    "min": 0.5522,
+    "max": 0.96271,
+    "p95": 0.96271
+  },
+  "flags": {
+    "full_reprocess": 0,
+    "lack_cache": 0,
+    "oom": 0
+  },
+  "raw_results": [
+    {
+      "round": 1,
+      "ok": true,
+      "elapsed": 14.57534670829773,
+      "total_tokens": 3301,
+      "content_preview": "基于上一轮对话的关键信息复述：您正在进行人工智能本地推理后端的部署测试，使用的模型是 **Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.ggu"
+    },
+    {
+      "round": 2,
+      "ok": true,
+      "elapsed": 15.122193098068237,
+      "total_tokens": 6574,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 3,
+      "ok": true,
+      "elapsed": 13.677947521209717,
+      "total_tokens": 9847,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 4,
+      "ok": true,
+      "elapsed": 13.98269772529602,
+      "total_tokens": 13120,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 5,
+      "ok": true,
+      "elapsed": 14.752337217330933,
+      "total_tokens": 16393,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 6,
+      "ok": true,
+      "elapsed": 15.09692931175232,
+      "total_tokens": 19666,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 7,
+      "ok": true,
+      "elapsed": 15.605691194534302,
+      "total_tokens": 22939,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 8,
+      "ok": true,
+      "elapsed": 15.54642629623413,
+      "total_tokens": 26212,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 9,
+      "ok": true,
+      "elapsed": 16.4810791015625,
+      "total_tokens": 29485,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 10,
+      "ok": true,
+      "elapsed": 16.774834394454956,
+      "total_tokens": 32759,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 11,
+      "ok": true,
+      "elapsed": 17.570881605148315,
+      "total_tokens": 36033,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 12,
+      "ok": true,
+      "elapsed": 16.17733359336853,
+      "total_tokens": 39307,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 13,
+      "ok": true,
+      "elapsed": 18.22222661972046,
+      "total_tokens": 42581,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 14,
+      "ok": true,
+      "elapsed": 18.191224813461304,
+      "total_tokens": 45855,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 15,
+      "ok": true,
+      "elapsed": 18.504091024398804,
+      "total_tokens": 49129,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 16,
+      "ok": true,
+      "elapsed": 18.86575698852539,
+      "total_tokens": 52403,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 17,
+      "ok": true,
+      "elapsed": 19.711241006851196,
+      "total_tokens": 55676,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 18,
+      "ok": true,
+      "elapsed": 20.464576721191406,
+      "total_tokens": 58950,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    },
+    {
+      "round": 19,
+      "ok": true,
+      "elapsed": 20.669554710388184,
+      "total_tokens": 62224,
+      "content_preview": "基于之前的对话上下文，您正在进行**人工智能本地推理后端部署测试**。关键配置如下：\n*   **模型文件**：`Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MT"
+    }
+  ]
+}

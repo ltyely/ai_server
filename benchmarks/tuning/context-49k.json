@@ -1,0 +1,142 @@
+{
+  "ctx_size": 49152,
+  "target_tokens": 45000,
+  "rounds": 14,
+  "successful_rounds": 14,
+  "final_total_tokens": 45855,
+  "mean_round_elapsed": 16.26792093685695,
+  "max_round_elapsed": 18.7560613155365,
+  "ttft_ms": {
+    "count": 14,
+    "mean": 6447.107857142857,
+    "min": 4224.45,
+    "max": 8422.93,
+    "p95": 8422.93
+  },
+  "gen_tps": {
+    "count": 28,
+    "mean": 281.31714285714287,
+    "min": 37.57,
+    "max": 690.5,
+    "p95": 685.32
+  },
+  "tg_tps": {
+    "count": 42,
+    "mean": 44.55095238095238,
+    "min": 38.46,
+    "max": 51.99,
+    "p95": 51.16
+  },
+  "mtp_acceptance": {
+    "count": 14,
+    "mean": 0.6827007142857143,
+    "min": 0.56103,
+    "max": 0.77616,
+    "p95": 0.77616
+  },
+  "flags": {
+    "full_reprocess": 0,
+    "lack_cache": 0,
+    "oom": 0
+  },
+  "raw_results": [
+    {
+      "round": 1,
+      "ok": true,
+      "elapsed": 14.391825914382935,
+      "total_tokens": 3301,
+      "content_preview": "基于上一轮对话的关键信息复述：您正在进行人工智能本地推理后端的部署测试，使用的模型为 **Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.ggu"
+    },
+    {
+      "round": 2,
+      "ok": true,
+      "elapsed": 14.210876226425171,
+      "total_tokens": 6574,
+      "content_preview": "基于之前的对话上下文，关键信息复述如下：您正在进行人工智能本地推理后端的部署测试，使用的模型为 **Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_"
+    },
+    {
+      "round": 3,
+      "ok": true,
+      "elapsed": 15.021353244781494,
+      "total_tokens": 9847,
+      "content_preview": "基于前两轮对话的关键信息复述：您正在进行人工智能本地推理后端的部署测试，使用的模型为 **Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.ggu"
+    },
+    {
+      "round": 4,
+      "ok": true,
+      "elapsed": 15.17789888381958,
+      "total_tokens": 13120,
+      "content_preview": "基于前几轮对话的关键信息复述：您正在进行人工智能本地推理后端的部署测试，使用的模型为 **Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.ggu"
+    },
+    {
+      "round": 5,
+      "ok": true,
+      "elapsed": 15.412466049194336,
+      "total_tokens": 16393,
+      "content_preview": "基于前四轮对话的关键信息复述：您正在进行人工智能本地推理后端的部署测试，使用的模型为 **Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.ggu"
+    },
+    {
+      "round": 6,
+      "ok": true,
+      "elapsed": 15.665470838546753,
+      "total_tokens": 19666,
+      "content_preview": "基于前五轮对话的关键信息复述：您正在进行人工智能本地推理后端的部署测试，使用的模型为 **Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.ggu"
+    },
+    {
+      "round": 7,
+      "ok": true,
+      "elapsed": 16.150174140930176,
+      "total_tokens": 22939,
+      "content_preview": "基于前六轮对话的关键信息复述：您正在进行人工智能本地推理后端的部署测试，使用的模型为 **Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.ggu"
+    },
+    {
+      "round": 8,
+      "ok": true,
+      "elapsed": 16.75413179397583,
+      "total_tokens": 26212,
+      "content_preview": "基于前七轮对话的关键信息复述：您正在进行人工智能本地推理后端的部署测试，使用的模型为 **Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.ggu"
+    },
+    {
+      "round": 9,
+      "ok": true,
+      "elapsed": 16.897887229919434,
+      "total_tokens": 29485,
+      "content_preview": "基于前八轮对话的关键信息复述：您正在进行人工智能本地推理后端的部署测试，使用的模型为 **Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.ggu"
+    },
+    {
+      "round": 10,
+      "ok": true,
+      "elapsed": 16.536073684692383,
+      "total_tokens": 32759,
+      "content_preview": "基于前九轮对话的关键信息复述：您正在进行人工智能本地推理后端的部署测试，使用的模型为 **Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.ggu"
+    },
+    {
+      "round": 11,
+      "ok": true,
+      "elapsed": 17.25389003753662,
+      "total_tokens": 36033,
+      "content_preview": "基于前十轮对话的关键信息复述：您正在进行人工智能本地推理后端的部署测试，使用的模型为 **Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.ggu"
+    },
+    {
+      "round": 12,
+      "ok": true,
+      "elapsed": 17.63318133354187,
+      "total_tokens": 39307,
+      "content_preview": "基于前十一轮对话的关键信息复述：您正在进行人工智能本地推理后端的部署测试，使用的模型为 **Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gg"
+    },
+    {
+      "round": 13,
+      "ok": true,
+      "elapsed": 17.889602422714233,
+      "total_tokens": 42581,
+      "content_preview": "基于前十二轮对话的关键信息复述：您正在进行人工智能本地推理后端的部署测试，使用的模型为 **Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gg"
+    },
+    {
+      "round": 14,
+      "ok": true,
+      "elapsed": 18.7560613155365,
+      "total_tokens": 45855,
+      "content_preview": "基于前十三轮对话的关键信息复述：您正在进行人工智能本地推理后端的部署测试，使用的模型为 **Qwen3.6-27B-Uncensored-HauhauCS-Balanced-MTP-Q4_K_P.gg"
+    }
+  ]
+}
