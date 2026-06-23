@@ -39,6 +39,14 @@
   - 64K/32K context 长文本 prefill 极慢（<35 t/s），60K prompt 处理超过 10 分钟
 - **状态**：不作为备选默认，仅保留文件和脚本供未来硬件升级后实验。
 
+### 仓库清理与 binary 自包含
+
+- **历史脚本清理**：删除 `scripts/fetch_gguf.py`、`hf_search.sh`、`start_api.sh`、`start_q3.6_unsloth.sh`、`start_qwen.sh`。
+- **历史模型清理**：删除 `models/` 根目录下所有旧版 GGUF（Qwen3.5、Qwopus、gemma、Qwen3.6-35B、Aggressive-Q4_K_P 等），释放约 130GB 磁盘空间。
+- **实验性模型清理**：删除 `models/qwen3.6-27b/longvision-128k/` 及对应 mmproj，释放约 20GB；仅保留脚本/服务文件供未来硬件升级后实验。
+- **binary 自包含**：使用 `patchelf` 将 `bin/llama-server` 及所有 `.so` 的 `RUNPATH` 修正为 `/home/yi/data/ai_server/bin:/opt/rocm-7.2.2/lib`，并删除旧版本 `.so`（0.9.11、8783、8855）。`bin/` 不再依赖被 gitignore 的 `llama.cpp/build-new/bin/`。
+- **敏感信息复核**：将示例代码中的测试 key `sk-test` 统一替换为 `your-api-key`；未在仓库中发现真实密码、token、私钥。
+
 ### 相关文档
 
 - `docs/services.md`
@@ -47,3 +55,4 @@
 - `benchmarks/tuning/context-size-ab.md`
 - `docs/issues.md`
 - `docs/work-report.md`
+- `docs/agent-usage-guide.md`

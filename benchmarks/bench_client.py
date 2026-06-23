@@ -7,7 +7,7 @@ from typing import Optional
 
 
 class ChatClient:
-    def __init__(self, base_url: str, model: str, api_key: str = "sk-test"):
+    def __init__(self, base_url: str, model: str, api_key: str = "your-api-key"):
         self.base_url = base_url.rstrip("/")
         self.model = model
         self.api_key = api_key

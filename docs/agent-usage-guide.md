@@ -149,7 +149,7 @@ curl http://localhost:11435/v1/models
 ```bash
 curl http://localhost:11435/v1/chat/completions \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer sk-test" \
+  -H "Authorization: Bearer your-api-key" \
   -d '{
     "model": "qwen36-27b-daily-mtp-65k",
     "messages": [
@@ -171,7 +171,7 @@ from openai import OpenAI
 
 client = OpenAI(
     base_url="http://localhost:11435/v1",
-    api_key="sk-test",
+    api_key="your-api-key",
 )
 
 response = client.chat.completions.create(

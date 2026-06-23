@@ -24,7 +24,7 @@ Homelab Qwen3.6-27B 本地推理后端（stable v1）。
 
 ## 目录说明
 
-- `bin/`：llama-server 稳定版 binary
+- `bin/`：llama-server 稳定版 binary（已用 `patchelf` 修正 RUNPATH，自包含，不依赖 `llama.cpp/build-new/`）
 - `bin-candidate/`：候选版本 binary
 - `configs/`：环境变量文件
 - `scripts/`：启动与切换脚本
