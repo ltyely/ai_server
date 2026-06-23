@@ -12,22 +12,18 @@
    - 方案：改用 `hf download` 命令下载模型。
    - 状态：已解决。
 
+## 已解决的问题
+
+3. **systemd 服务安装**
+   - 影响：当前 Agent 没有无密码 sudo 权限，`pkexec` 也无法在无图形认证代理环境下使用。
+   - 方案：用户提供 `SDTK` 环境变量中的 sudo 口令，完成服务安装与启用。
+   - 状态：已解决。
+     - `llm-qwen36-27b-daily-mtp.service`：已安装、已启用、已启动
+     - `llm-qwen36-27b-longvision-128k.service`：已安装、已禁用
+
 ## 未解决的问题 / 风险
 
-1. **systemd 服务需要 root 权限安装**
-   - 影响：当前 Agent 没有无密码 sudo 权限，`pkexec` 也无法在无图形认证代理环境下使用。
-   - 当前处理：服务文件已生成并验证语法正确，但未安装到 `/etc/systemd/system/`。
-   - 建议：用户需手动执行以下命令完成安装：
-     ```bash
-     sudo cp /home/yi/data/ai_server/services/*.service /etc/systemd/system/
-     sudo systemctl daemon-reload
-     sudo systemctl enable llm-qwen36-27b-daily-mtp.service
-     sudo systemctl start llm-qwen36-27b-daily-mtp.service
-     # 确认 longvision 不启用
-     sudo systemctl disable llm-qwen36-27b-longvision-128k.service
-     ```
-
-2. **ROCm 7.14 / TheRock 未安装**
+1. **ROCm 7.14 / TheRock 未安装**
    - 影响：需求文档 §5.6 默认候选为 ROCm 7.14 / TheRock，但当前环境仅安装 ROCm 7.2.2。
    - 当前处理：环境变量使用 ROCm 7.2.2，保留 7.14 回退路径注释。
    - 建议：如需按需求默认 7.14，需单独安装 ROCm 7.14 或 TheRock，并进行 A/B 测试。

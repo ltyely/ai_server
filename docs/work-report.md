@@ -42,8 +42,8 @@
 
 ## 默认状态
 
-- 服务：daily-mtp 计划启用，longvision 不启用
-  - 注意：systemd 服务文件尚未安装到 `/etc/systemd/system/`，需用户手动执行
+- 服务：`llm-qwen36-27b-daily-mtp.service` 已安装、已启用、正在运行
+- 服务：`llm-qwen36-27b-longvision-128k.service` 已安装、已禁用、不自动启动
 - 默认 API：`http://<vm-ip>:11435/v1`
 - 默认模型：`qwen36-27b-daily-mtp-65k`
 - 备选 API：`http://<vm-ip>:11436/v1`
@@ -66,15 +66,13 @@
 
 ## 主要问题与风险
 
-1. systemd 服务需要 root 权限安装，当前未能自动完成。
-2. ROCm 7.14 / TheRock 未安装，实际使用 ROCm 7.2.2。
-3. XNACK 内核未启用。
-4. server log 中出现 25 次 full prompt re-processing，建议后续调优 context size。
+1. ROCm 7.14 / TheRock 未安装，实际使用 ROCm 7.2.2。
+2. XNACK 内核未启用。
+3. server log 中出现 25 次 full prompt re-processing，建议后续调优 context size。
 
 ## 后续建议
 
-1. **立即**：手动安装 systemd 服务并启用 daily-mtp。
-2. **第一优先级**：按 `docs/tuning-matrix.md` 进行稳定性确认，重点观察长会话是否频繁 re-prefill。
+1. **第一优先级**：按 `docs/tuning-matrix.md` 进行稳定性确认，重点观察长会话是否频繁 re-prefill。
 3. **第二优先级**：尝试 context size 32K/49K/65K 的 A/B，找到re-prefill 和性能的甜点。
 4. **第三优先级**：如需 ROCm 7.14 / TheRock，单独安装并 A/B 测试。
 5. **第四优先级**：测试备选 longvision-128k 的 128K 上下文和 mmproj 视觉能力。
