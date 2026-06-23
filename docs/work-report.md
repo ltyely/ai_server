@@ -64,6 +64,24 @@
 | OOM | 0 次 |
 | full prompt re-processing | 25 次（需关注） |
 
+## 性能观测结果（来自 server log）
+
+| 指标 | 统计值 |
+|------|--------|
+| **首 token 加载时间 / TTFT** | count=206, mean=1827.76 ms, p95=9601.27 ms, max=115645.59 ms（60K 上下文） |
+| **Prompt eval 速度** | count=206, mean=141.57 tokens/s, p95=512.23 tokens/s, max=742.34 tokens/s |
+| **Generation eval 速度** | count=412, mean=93.12 tokens/s, p95=432.90 tokens/s |
+| **TG speed（实时解码吞吐）** | count=80, mean=47.77 t/s, p95=54.95 t/s, max=55.35 t/s |
+| **MTP 投机解码命中率** | count=206, mean=0.77, p95=1.00 |
+| **MTP 平均接受长度** | count=206, mean=3.32 tokens |
+| **MTP 各位置命中率** | position 0: 0.873, position 1: 0.762, position 2: 0.683 |
+
+### 观测说明
+
+- **TTFT** 对应 server log 中的 `prompt eval time`，即 prompt 进入后到首个 token 生成前的 prefill 耗时。短 prompt 约 100-300 ms，60K 上下文约 115 s，仍在 120 s 阈值内。
+- **TG speed** 是 llama-server 生成过程中周期性打印的 `tg = XX.XX t/s`，比平均 generation eval 速度更能反映实时解码吞吐，稳定在 45-55 t/s。
+- **MTP 投机解码命中率** 通过 `draft acceptance = X.XXXX (X accepted / Y generated)` 统计，平均 77%，最高可达 100%，平均接受长度 3.32 tokens，说明 draft-mtp 显著提升了 decode 效率。
+
 ## 主要问题与风险
 
 1. ROCm 7.14 / TheRock 未安装，实际使用 ROCm 7.2.2。
