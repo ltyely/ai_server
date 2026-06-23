@@ -29,12 +29,18 @@
   - JSON/工具调用 50 次
   - 中长上下文 8K/16K/32K/60K
   - 长会话 Agent 模拟（累积到 60K tokens）
+- [x] task1：daily-mtp-65k 稳定性固化与 context A/B 测试
+  - 32K / 49K / 65K context size 长会话 A/B 测试
+  - longvision-128k 64K/100K/单图补测
+  - 报告：`benchmarks/tuning/context-size-ab.md`
+  - 结论已写入 `docs/tuning-matrix.md`
 - [x] 文档
   - `docs/models.md`
   - `docs/build.md`
   - `docs/tuning-matrix.md`
   - `docs/issues.md`
   - `benchmarks/baseline-report.md`
+  - `benchmarks/tuning/context-size-ab.md`
 - [x] Git 版本控制
   - 初始化 `/home/yi/data/ai_server/.git`
   - `.gitignore` 忽略模型、binary、日志等
@@ -82,18 +88,65 @@
 - **TG speed** 是 llama-server 生成过程中周期性打印的 `tg = XX.XX t/s`，比平均 generation eval 速度更能反映实时解码吞吐，稳定在 45-55 t/s。
 - **MTP 投机解码命中率** 通过 `draft acceptance = X.XXXX (X accepted / Y generated)` 统计，平均 77%，最高可达 100%，平均接受长度 3.32 tokens，说明 draft-mtp 显著提升了 decode 效率。
 
+## task1 调优结论（context size A/B）
+
+### 32K / 49K / 65K 对比数据
+
+| 指标 | 32K | 49K | 65K |
+|------|-----|-----|-----|
+| 目标累积 tokens | 30000 | 45000 | 60000 |
+| 成功轮数 | 10/10 | 14/14 | 19/19 |
+| 最终总 tokens | 32699 | 45855 | 62224 |
+| 平均单轮耗时 | 15.70 s | 16.27 s | 16.84 s |
+| 最大单轮耗时 | 17.33 s | 18.76 s | 20.67 s |
+| TTFT mean | 5768.84 ms | 6447.11 ms | 7276.28 ms |
+| TTFT p95 | 7087.65 ms | 8422.93 ms | 10120.43 ms |
+| Generation eval speed mean | 305.71 t/s | 281.32 t/s | 257.22 t/s |
+| TG speed mean | 43.20 t/s | 44.55 t/s | 45.33 t/s |
+| MTP acceptance mean | 0.616 | 0.683 | **0.758** |
+| MTP acceptance p95 | 0.688 | 0.776 | **0.963** |
+| full prompt re-processing | 0 | 0 | 0 |
+| lack of cache data | 0 | 0 | 0 |
+| OOM | 0 | 0 | 0 |
+
+### 推荐默认 context
+
+**daily-mtp-65k 默认 context size：65536（65K）**
+
+- 真实 Agent 长会话（逐步累积上下文）中，32K/49K/65K 均未触发 full prompt re-processing。
+- 65K 最大单轮耗时 20.67s，远低于 120s 阈值。
+- 65K MTP 命中率最高（mean 0.758，p95 0.963）。
+- TG speed 在三种配置下基本持平（43-45 t/s）。
+
+### full prompt re-processing 触发场景
+
+1. 同一 slot 中上下文长度剧烈变化（如基线测试 8K→16K→32K→60K 切换）。
+2. longvision 长 prompt 处理中也观察到触发。
+3. 真实 Agent 长会话（逐步增长）不易触发。
+
+### longvision-128k 补测结果
+
+| 测试项 | 结果 |
+|--------|------|
+| 64K context 文本 | 可启动，但 60K prompt 处理极慢（>10 分钟），未跑完 |
+| 100K context 文本 | 可启动，预计比 64K 更慢，未实际跑完 |
+| 128K context + mmproj 单图 | **OOM 无法启动** |
+| 32K context 文本 | 可启动，长 prompt 处理仍极慢（~3 分钟处理 6K tokens） |
+
+**结论**：当前 24GB VRAM 无法支撑 longvision-128k 实用。建议升级 GPU 显存或改用更低量化版本。
+
 ## 主要问题与风险
 
 1. ROCm 7.14 / TheRock 未安装，实际使用 ROCm 7.2.2。
 2. XNACK 内核未启用。
-3. server log 中出现 25 次 full prompt re-processing，建议后续调优 context size。
+3. longvision-128k 在当前 24GB VRAM 下不具备实用价值（128K+mmproj OOM，64K/32K 长文本 prefill 极慢）。
 
 ## 后续建议
 
-1. **第一优先级**：按 `docs/tuning-matrix.md` 进行稳定性确认，重点观察长会话是否频繁 re-prefill。
-3. **第二优先级**：尝试 context size 32K/49K/65K 的 A/B，找到re-prefill 和性能的甜点。
-4. **第三优先级**：如需 ROCm 7.14 / TheRock，单独安装并 A/B 测试。
-5. **第四优先级**：测试备选 longvision-128k 的 128K 上下文和 mmproj 视觉能力。
+1. **第一优先级**：如需 ROCm 7.14 / TheRock，单独安装并 A/B 测试。
+2. **第二优先级**：按 `docs/tuning-matrix.md` 继续 batch/ubatch 调优。
+3. **第三优先级**：如需 longvision-128k，升级 GPU 显存或改用更低量化版本。
+4. **第四优先级**：持续监控 full prompt re-processing，确认真实 Agent 场景下是否稳定。
 
 ## 文件位置
 
