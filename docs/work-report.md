@@ -2,7 +2,12 @@
 
 ## 项目概述
 
-完成 Homelab Qwen3.6-27B 本地推理后端 v0.2 的部署、基线测试与文档化工作。
+完成 Homelab Qwen3.6-27B 本地推理后端 v0.2 的部署、基线测试、调优与文档化工作，并固化为 **stable-daily-mtp-65k-v1**。
+
+- **Git tag**：`stable-daily-mtp-65k-v1`
+- **唯一推荐默认后端**：`qwen36-27b-daily-mtp-65k`
+- **默认 context size**：65536（已固化）
+- **实验性后端**：`qwen36-27b-longvision-128k`（已降级，disabled）
 
 ## 完成项
 
@@ -48,12 +53,13 @@
 
 ## 默认状态
 
-- 服务：`llm-qwen36-27b-daily-mtp.service` 已安装、已启用、正在运行
-- 服务：`llm-qwen36-27b-longvision-128k.service` 已安装、已禁用、不自动启动
-- 默认 API：`http://<vm-ip>:11435/v1`
-- 默认模型：`qwen36-27b-daily-mtp-65k`
-- 备选 API：`http://<vm-ip>:11436/v1`
-- 备选模型：`qwen36-27b-longvision-128k`
+- **服务**：`llm-qwen36-27b-daily-mtp.service` 已安装、已启用、正在运行
+- **服务**：`llm-qwen36-27b-longvision-128k.service` 已安装、已禁用、不自动启动
+- **默认 API**：`http://<vm-ip>:11435/v1`
+- **默认模型**：`qwen36-27b-daily-mtp-65k`
+- **默认 context size**：65536
+- **实验性 API**：`http://<vm-ip>:11436/v1`（不推荐日常使用）
+- **实验性模型**：`qwen36-27b-longvision-128k`（已降级，24GB VRAM 下不具备实用价值）
 
 ## 测试结果摘要
 
@@ -139,13 +145,13 @@
 
 1. ROCm 7.14 / TheRock 未安装，实际使用 ROCm 7.2.2。
 2. XNACK 内核未启用。
-3. longvision-128k 在当前 24GB VRAM 下不具备实用价值（128K+mmproj OOM，64K/32K 长文本 prefill 极慢）。
+3. longvision-128k 在当前 24GB VRAM 下不具备实用价值（128K+mmproj OOM，64K/32K 长文本 prefill 极慢），已降级为实验性后端。
 
 ## 后续建议
 
 1. **第一优先级**：如需 ROCm 7.14 / TheRock，单独安装并 A/B 测试。
 2. **第二优先级**：按 `docs/tuning-matrix.md` 继续 batch/ubatch 调优。
-3. **第三优先级**：如需 longvision-128k，升级 GPU 显存或改用更低量化版本。
+3. **第三优先级**：如需启用 longvision-128k，升级 GPU 显存（≥32GB）或改用更低量化版本。
 4. **第四优先级**：持续监控 full prompt re-processing，确认真实 Agent 场景下是否稳定。
 
 ## 文件位置
