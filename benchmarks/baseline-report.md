@@ -1,6 +1,6 @@
 # 基线测试报告
 
-生成时间：2026-06-22T18:39:30.447720
+生成时间：2026-06-23T00:54:34.078677
 
 ## 测试环境
 
@@ -9,6 +9,19 @@
 - ROCm: 7.2.2 (当前环境未安装 7.14 / TheRock)
 - llama.cpp commit: 721354fbdfb7743e2be2183d918a3cdb9276c70f
 - Model: qwen36-27b-daily-mtp-65k
+
+## 关键性能指标（来自 server log）
+
+- **首 token 加载时间 / Prompt eval time (TTFT, ms)**: count=206, mean=1827.76, min=93.07, max=115645.59, p95=9601.27
+- **Prompt eval 速度 (tokens/s)**: count=206, mean=141.57, min=23.86, max=742.34, p95=512.23
+- **Generation eval 速度 (tokens/s)**: count=412, mean=93.12, min=23.86, max=742.34, p95=432.90
+- **TG speed (tokens/s)**: count=80, mean=47.77, min=37.56, max=55.35, p95=54.95
+- **MTP 投机解码命中率 (acceptance ratio)**: count=206, mean=0.77, min=0.27, max=1.00, p95=1.00
+- **MTP 平均接受长度 (mean acceptance length)**: count=206, mean=3.32, min=1.81, max=4.00, p95=4.00
+- **MTP 各位置命中率**:
+  - position 0: 0.873
+  - position 1: 0.762
+  - position 2: 0.683
 
 ## 短请求测试 (100 次)
 
@@ -41,10 +54,11 @@
 
 ## Server log 稳定性标记
 
-- full_reprocess: 25
-- lack_cache: 25
-- oom: 0
+- full_reprocess_count: 25
+- lack_cache_count: 25
+- oom_count: 0
 
 ## 结论
 
 - JSON 解析率 >= 95%，通过最低验收。
+- 60K 上下文 TTFT 在可接受范围内。
