@@ -1,0 +1,33 @@
+{
+  "long_chain": {
+    "summary": {
+      "rounds": 3,
+      "successful_rounds": 2,
+      "final_total_tokens": 7406,
+      "reached_levels": [],
+      "mean_elapsed": 199.94593608379364,
+      "max_elapsed": 234.6553270816803
+    },
+    "results": [
+      {
+        "round": 1,
+        "ok": true,
+        "elapsed": 165.23654508590698,
+        "total_tokens": 3718,
+        "completion_tokens": 384
+      },
+      {
+        "round": 2,
+        "ok": true,
+        "elapsed": 234.6553270816803,
+        "total_tokens": 7406,
+        "completion_tokens": 384
+      },
+      {
+        "round": 3,
+        "ok": false,
+        "error": "Remote end closed connection without response"
+      }
+    ]
+  }
+}

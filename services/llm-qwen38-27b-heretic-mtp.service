@@ -1,0 +1,17 @@
+[Unit]
+Description=Qwen3.8 27B Heretic MTP llama-server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/yi/data/ai_server
+ExecStart=/home/yi/data/ai_server/scripts/start-qwen38-27b-heretic-mtp.sh
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+KillSignal=SIGINT
+EnvironmentFile=/home/yi/data/ai_server/configs/qwen38-27b-heretic-mtp.env
+
+[Install]
+WantedBy=multi-user.target

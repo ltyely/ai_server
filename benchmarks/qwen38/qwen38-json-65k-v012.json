@@ -1,0 +1,262 @@
+{
+  "json": {
+    "summary": {
+      "total": 50,
+      "valid_json": 0,
+      "success_rate": 0.0,
+      "mean_elapsed": 0
+    },
+    "results": [
+      {
+        "ok": false,
+        "elapsed": 3.3005244731903076,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含特定字段：\n- id: 整数 1\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, f"
+      },
+      {
+        "ok": false,
+        "elapsed": 3.4143340587615967,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含特定字段：\n- id: 整数 2\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, f"
+      },
+      {
+        "ok": false,
+        "elapsed": 3.784083127975464,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 3\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, f"
+      },
+      {
+        "ok": false,
+        "elapsed": 3.4850881099700928,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 4\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, f"
+      },
+      {
+        "ok": false,
+        "elapsed": 3.72748064994812,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 5\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, f"
+      },
+      {
+        "ok": false,
+        "elapsed": 3.7868993282318115,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 6\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, f"
+      },
+      {
+        "ok": false,
+        "elapsed": 3.3057010173797607,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 7\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, f"
+      },
+      {
+        "ok": false,
+        "elapsed": 3.5484018325805664,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 8\n- name: 测试项目\n- status: 从 [pending, running, completed, fai"
+      },
+      {
+        "ok": false,
+        "elapsed": 3.2382757663726807,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 9\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, f"
+      },
+      {
+        "ok": false,
+        "elapsed": 3.275986433029175,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含特定字段：\n- id: 整数 10\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 4.495764970779419,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 11\n- name: 测试项目\n- status: 从 [pending, running, completed, fa"
+      },
+      {
+        "ok": false,
+        "elapsed": 3.302384614944458,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 12\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.336702585220337,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 13\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.283165454864502,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 14\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.4286937713623047,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含特定字段：\n- id: 整数 15\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.218968391418457,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 16\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.439852714538574,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含特定字段：\n- id: 整数 17\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.441333532333374,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含特定字段：\n- id: 整数 18\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.454301357269287,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 19\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 4.01842474937439,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含特定字段：\n- id: 整数 20\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.291339635848999,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 21\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.558445930480957,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含特定字段：\n- id: 整数 22\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.6334240436553955,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 23\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.3029115200042725,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 24\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.5682644844055176,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 25\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.284230947494507,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 26\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.4333584308624268,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 27\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 4.151247262954712,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 28\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 4.190061569213867,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 29\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.6158008575439453,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 30\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.7025132179260254,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 31\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.4768383502960205,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 32\n- name: 测试项目\n- status: 从 [pending, running, completed, fa"
+      },
+      {
+        "ok": false,
+        "elapsed": 3.570793390274048,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 33\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.1988892555236816,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 34\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.499908208847046,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含特定字段：\n- id: 整数 35\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.57254958152771,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 36\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.2921907901763916,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 37\n- name: 测试项目\n- status: 从 [pending, running, completed, fa"
+      },
+      {
+        "ok": false,
+        "elapsed": 3.8096983432769775,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含特定字段：\n- id: 整数 38\n- name: 测试项目\n- status: 从 [pending, running, completed, fa"
+      },
+      {
+        "ok": false,
+        "elapsed": 3.77323842048645,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 39\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.609447956085205,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 40\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.375196933746338,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 41\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.3944265842437744,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 42\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.315293073654175,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 43\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.4801807403564453,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 44\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.6266074180603027,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含特定字段：\n- id: 整数 45\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 4.088894605636597,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 46\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.4294321537017822,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 47\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.3076515197753906,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 48\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.2924468517303467,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 49\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      },
+      {
+        "ok": false,
+        "elapsed": 3.3277971744537354,
+        "content_preview": "<think>\n用户要求生成一个JSON对象，包含以下字段：\n- id: 整数 50\n- name: \"测试项目\"\n- status: 从 [pending, running, completed, "
+      }
+    ]
+  }
+}

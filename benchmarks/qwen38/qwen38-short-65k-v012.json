@@ -1,0 +1,475 @@
+{
+  "short": {
+    "summary": {
+      "total": 100,
+      "success": 62,
+      "mean_elapsed": 3.634498350081905,
+      "mean_completion_tokens": 104.09677419354838,
+      "mean_tps": 27.836977352366688
+    },
+    "results": [
+      {
+        "ok": true,
+        "elapsed": 3.629326581954956,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 3.806553602218628,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 3.989009141921997,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 3.9297120571136475,
+        "completion_tokens": 49
+      },
+      {
+        "ok": true,
+        "elapsed": 4.139939308166504,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 2.150235176086426,
+        "completion_tokens": 47
+      },
+      {
+        "ok": true,
+        "elapsed": 2.3657424449920654,
+        "completion_tokens": 54
+      },
+      {
+        "ok": true,
+        "elapsed": 1.5598034858703613,
+        "completion_tokens": 38
+      },
+      {
+        "ok": true,
+        "elapsed": 4.282804012298584,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.029424667358398,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.022331237792969,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.603647947311401,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.686141490936279,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.016496181488037,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.024209499359131,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.32394552230835,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 3.93945574760437,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.178465127944946,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 2.2178516387939453,
+        "completion_tokens": 51
+      },
+      {
+        "ok": true,
+        "elapsed": 3.805109977722168,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 5.210122585296631,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 2.655557870864868,
+        "completion_tokens": 43
+      },
+      {
+        "ok": true,
+        "elapsed": 4.0328755378723145,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 3.842302083969116,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 3.9845175743103027,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 2.2701432704925537,
+        "completion_tokens": 46
+      },
+      {
+        "ok": true,
+        "elapsed": 3.8126721382141113,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 2.4375765323638916,
+        "completion_tokens": 46
+      },
+      {
+        "ok": true,
+        "elapsed": 1.7952401638031006,
+        "completion_tokens": 38
+      },
+      {
+        "ok": true,
+        "elapsed": 4.908801794052124,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.118192195892334,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 3.4771358966827393,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.36411452293396,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 1.9243168830871582,
+        "completion_tokens": 47
+      },
+      {
+        "ok": true,
+        "elapsed": 4.077716112136841,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 2.316082000732422,
+        "completion_tokens": 53
+      },
+      {
+        "ok": true,
+        "elapsed": 4.079911708831787,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.012584447860718,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 5.527590990066528,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 2.0128977298736572,
+        "completion_tokens": 44
+      },
+      {
+        "ok": true,
+        "elapsed": 3.9977521896362305,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 1.8636460304260254,
+        "completion_tokens": 45
+      },
+      {
+        "ok": true,
+        "elapsed": 3.8662831783294678,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.313092470169067,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.471969127655029,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.0084874629974365,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 3.1856865882873535,
+        "completion_tokens": 53
+      },
+      {
+        "ok": true,
+        "elapsed": 1.8204197883605957,
+        "completion_tokens": 33
+      },
+      {
+        "ok": true,
+        "elapsed": 3.9728825092315674,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.194476842880249,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.16421365737915,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.545809268951416,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.031106948852539,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 3.902822732925415,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.9661171436309814,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.050088167190552,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.218676567077637,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 4.059759855270386,
+        "completion_tokens": 128
+      },
+      {
+        "ok": true,
+        "elapsed": 2.255354404449463,
+        "completion_tokens": 49
+      },
+      {
+        "ok": true,
+        "elapsed": 2.2550997734069824,
+        "completion_tokens": 43
+      },
+      {
+        "ok": true,
+        "elapsed": 2.5954058170318604,
+        "completion_tokens": 43
+      },
+      {
+        "ok": true,
+        "elapsed": 4.039190292358398,
+        "completion_tokens": 128
+      },
+      {
+        "ok": false,
+        "error": "Remote end closed connection without response"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      },
+      {
+        "ok": false,
+        "error": "<urlopen error [Errno 111] Connection refused>"
+      }
+    ]
+  }
+}

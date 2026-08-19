@@ -7,6 +7,7 @@ models.*/
 # 编译产物与 binary
 bin/
 bin-candidate/
+bin-backup-*/
 build/
 build-*/
 llama.cpp/

@@ -56,3 +56,42 @@
 - `docs/issues.md`
 - `docs/work-report.md`
 - `docs/agent-usage-guide.md`
+
+## qwen38-heretic-mtp-v1（实验性）
+
+**日期**：2026-08-19  
+**状态**：实验性，需手动切换
+
+### 配置
+
+- **模型**：`qwen38-27b-heretic-mtp`
+- **模型文件**：`RVN-Q4_K_M-mtp.gguf`（0bserverx Heretic，16 GB）
+- **mmproj**：`mmproj-Qwen3.8-27B-Q8_0.gguf`（601 MB）
+- **Context size**：65536 / 98304 / 131072 可配置
+- **KV cache**：`-ctk q8_0 -ctv q4_1`
+- **MTP**：`--spec-type draft-mtp --spec-draft-n-max 3`
+- **Batch**：`--batch-size 2048 --ubatch-size 512`
+- **Sampling**：`--temp 0.4 --top-p 0.95 --top-k 20 --repeat-penalty 1.1 --repeat-last-n 64`
+- **Reasoning**：`--reasoning off`（工具调用场景）
+- **llama.cpp commit**：`1511ce3bc`（v0.1.2）
+- **ROCm**：7.2.2
+
+### 关键变更
+
+1. **升级 llama.cpp 至 v0.1.2**：旧版 `721354fbd` 无法正确加载 Qwen3.8（`missing tensor 'blk.64.ssm_conv1d.weight'`），升级后正常。
+2. **binary 替换**：`bin/` 下所有二进制和 `.so` 更新为 v0.1.2，RUNPATH 修正为 `/home/yi/data/ai_server/bin:/opt/rocm-7.2.2/lib`。
+3. **新增服务**：`llm-qwen38-27b-heretic-mtp.service`（端口 11436）。
+4. **新增切换脚本**：`use-qwen38-heretic-mtp.sh` / `use-qwen36-daily-mtp.sh`。
+
+### 测试结果摘要
+
+- 65K 短请求：100/100 成功，平均 27.4 t/s
+- 65K JSON：50/50 成功
+- 96K/128K 可启动，VRAM 占用 21.6GB/22.7GB
+- ROCm 下性能低于 Vulkan（参考帖子 73 t/s），prefill 随 context 长度急剧下降
+- 长链 Agent 场景性能瓶颈明显，128K 实用价值有限
+
+### 相关文档
+
+- `docs/qwen38-evaluation.md`
+- `docs/services.md`

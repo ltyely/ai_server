@@ -12,7 +12,7 @@ class ChatClient:
         self.model = model
         self.api_key = api_key
 
-    def chat(self, messages, temperature: float = 0.4, max_tokens: int = 512, stream: bool = False):
+    def chat(self, messages, temperature: float = 0.4, max_tokens: int = 512, stream: bool = False, extra_body: Optional[dict] = None):
         url = f"{self.base_url}/v1/chat/completions"
         payload = {
             "model": self.model,
@@ -21,6 +21,8 @@ class ChatClient:
             "max_tokens": max_tokens,
             "stream": stream,
         }
+        if extra_body:
+            payload.update(extra_body)
         data = json.dumps(payload).encode("utf-8")
         req = urllib.request.Request(
             url,
@@ -31,7 +33,7 @@ class ChatClient:
             },
         )
         start = time.time()
-        with urllib.request.urlopen(req, timeout=300) as resp:
+        with urllib.request.urlopen(req, timeout=1200) as resp:
             body = resp.read().decode("utf-8")
         elapsed = time.time() - start
         result = json.loads(body)

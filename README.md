@@ -1,8 +1,8 @@
 :# ai_server
 
-Homelab Qwen3.6-27B 本地推理后端（stable v1）。
+Homelab Qwen3.6/3.8-27B 本地推理后端。
 
-## 唯一推荐默认后端
+## 默认后端（稳定）
 
 - **服务**：`llm-qwen36-27b-daily-mtp-65k.service`
 - **模型**：`qwen36-27b-daily-mtp-65k`
@@ -10,17 +10,24 @@ Homelab Qwen3.6-27B 本地推理后端（stable v1）。
 - **Context size**：65536（默认，已固化）
 - **启动命令**：`sudo systemctl start llm-qwen36-27b-daily-mtp.service`
 
-`qwen36-27b-daily-mtp-65k` 是当前唯一推荐用于日常、Agent、长上下文的默认后端。该配置已通过基线测试与 32K/49K/65K context size A/B 测试验证。
+`qwen36-27b-daily-mtp-65k` 是当前稳定默认后端，已通过完整基线与长会话测试。
 
-## 实验性后端（不推荐日常使用）
+## Qwen3.8 实验性后端
+
+- **服务**：`llm-qwen38-27b-heretic-mtp.service`
+- **模型**：`qwen38-27b-heretic-mtp`
+- **API**：`http://<vm-ip>:11436/v1`
+- **Context size**：65536 / 98304 / 131072 可配置
+- **启动命令**：`/home/yi/data/ai_server/scripts/use-qwen38-heretic-mtp.sh`
+- **切回默认**：`/home/yi/data/ai_server/scripts/use-qwen36-daily-mtp.sh`
+
+**注意**：Qwen3.8 需要 llama.cpp v0.1.2+，当前 ROCm 下性能低于 Qwen3.6，详见 `docs/qwen38-evaluation.md`。
+
+## 旧实验性后端（已废弃）
 
 - **服务**：`llm-qwen36-27b-longvision-128k.service`
-- **状态**：已安装，但**已禁用**，不作为备选默认
-- **原因**：在当前 24GB VRAM（Radeon RX 7900 XTX）下不具备实用价值
-  - 128K context + mmproj 启动即 OOM
-  - 64K/32K context 长文本 prefill 极慢（<35 t/s），60K prompt 处理超过 10 分钟
-- **如需启动**（仅限实验）：`/home/yi/data/ai_server/scripts/use-longvision-128k.sh`
-- **任务完成后必须切回**：`/home/yi/data/ai_server/scripts/use-daily-mtp.sh`
+- **状态**：已禁用，模型文件已删除
+- **原因**：24GB VRAM 下不具备实用价值
 
 ## 目录说明
 
@@ -43,14 +50,15 @@ sudo systemctl start llm-qwen36-27b-daily-mtp.service
 # 查看状态
 systemctl status llm-qwen36-27b-daily-mtp.service
 
-# 人工触发实验性后端（不推荐日常使用）
-/home/yi/data/ai_server/scripts/use-longvision-128k.sh
+# 切换到 Qwen3.8 实验性后端
+/home/yi/data/ai_server/scripts/use-qwen38-heretic-mtp.sh
 
-# 切回默认后端
-/home/yi/data/ai_server/scripts/use-daily-mtp.sh
+# 切回 Qwen3.6 默认后端
+/home/yi/data/ai_server/scripts/use-qwen36-daily-mtp.sh
 ```
 
 ## 版本
 
 - Git tag：`stable-daily-mtp-65k-v1`
-- llama.cpp commit：`721354fbdfb7743e2be2183d918a3cdb9276c70f`
+- llama.cpp commit：`1511ce3bc`（v0.1.2，Qwen3.8 兼容）
+- 旧版 commit：`721354fbdfb7743e2be2183d918a3cdb9276c70f`（仅 Qwen3.6）
