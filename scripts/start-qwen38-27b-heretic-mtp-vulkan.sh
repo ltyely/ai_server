@@ -4,6 +4,7 @@ source /home/yi/data/ai_server/configs/qwen38-27b-heretic-mtp-vulkan.env
 LOG_DIR="/home/yi/data/ai_server/logs/qwen38-heretic-mtp-vulkan"
 mkdir -p "$LOG_DIR"
 export LD_LIBRARY_PATH="/home/yi/data/ai_server/bin-vulkan:${LD_LIBRARY_PATH:-}"
+export GGML_VK_DISABLE_HOST_VISIBLE_VIDMEM=1
 exec /home/yi/data/ai_server/bin-vulkan/llama-server \
   -m "$MODEL_PATH" \
   --mmproj "$MMPROJ_PATH" \

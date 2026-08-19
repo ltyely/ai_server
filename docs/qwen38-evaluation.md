@@ -91,8 +91,9 @@ Qwen3.8 官方支持 `reasoning_effort`：
 
 - 编译 llama.cpp v0.1.2 Vulkan 版本成功
 - 7900 XTX 被识别（RADV NAVI31，Mesa 25.2.8）
-- **性能极差**：decode 仅 0.9 t/s，比 ROCm 慢 30 倍以上
-- 可能原因：PVE VM 直通环境下 Vulkan 性能异常，或需要额外内核/驱动配置
+- **性能极差**：decode 仅 0.8-0.9 t/s，比 ROCm 慢 30-50 倍
+- 已尝试 `GGML_VK_DISABLE_HOST_VISIBLE_VIDMEM=1`，无效
+- **根因**：PVE VM 直通环境下 GPU BAR 仅 256MB（无 ReBAR），Vulkan 后端在此环境下性能崩溃
 - **结论**：当前 VM 环境下 Vulkan 不可用，继续优化 ROCm
 
 ## 96K / 128K Context 测试
