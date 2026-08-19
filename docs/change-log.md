@@ -69,8 +69,9 @@
 - **mmproj**：`mmproj-Qwen3.8-27B-Q8_0.gguf`（601 MB）
 - **Context size**：65536 / 98304 / 131072 可配置
 - **KV cache**：`-ctk q8_0 -ctv q4_1`
-- **MTP**：`--spec-type draft-mtp --spec-draft-n-max 3`
+- **MTP**：`--spec-type draft-mtp --spec-draft-n-max 5`（扫描 2/3/4/5/6 后选定）
 - **Batch**：`--batch-size 2048 --ubatch-size 512`
+- **Prompt cache**：`--cache-ram 32768`
 - **Sampling**：`--temp 0.4 --top-p 0.95 --top-k 20 --repeat-penalty 1.1 --repeat-last-n 64`
 - **Reasoning**：`--reasoning off`（工具调用场景）
 - **llama.cpp commit**：`1511ce3bc`（v0.1.2）
@@ -85,11 +86,12 @@
 
 ### 测试结果摘要
 
-- 65K 短请求：100/100 成功，平均 27.4 t/s
+- 65K 短请求：100/100 成功，平均 27.4 t/s（优化后 30-46 t/s）
 - 65K JSON：50/50 成功
 - 96K/128K 可启动，VRAM 占用 21.6GB/22.7GB
-- ROCm 下性能低于 Vulkan（参考帖子 73 t/s），prefill 随 context 长度急剧下降
-- 长链 Agent 场景性能瓶颈明显，128K 实用价值有限
+- n-max 扫描：5 最优，6 开始下降
+- Vulkan 实验：性能极差（0.9 t/s），VM 直通环境下不可用，回退 ROCm
+- ROCm 下长上下文 prefill 性能瓶颈明显，128K 实用价值有限
 
 ### 相关文档
 

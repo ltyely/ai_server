@@ -22,6 +22,7 @@ exec /home/yi/data/ai_server/bin/llama-server \
   --ctx-checkpoints 69 \
   --repeat-penalty 1.1 --repeat-last-n 64 \
   --temp 0.4 --top-p 0.95 --top-k 20 \
+  --cache-ram 32768 \
   --reasoning off \
   --jinja \
   "$@" >> "$LOG_DIR/llm-qwen38-27b-heretic-mtp.log" 2>&1

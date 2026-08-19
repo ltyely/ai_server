@@ -70,6 +70,31 @@ Qwen3.8 官方支持 `reasoning_effort`：
 - 观察：随上下文累积，prompt 处理速度从 57 t/s 降至 9-19 t/s，eval 从 10.5 t/s 降至 5.7 t/s
 - **结论**：Gated DeltaNet 架构下，长上下文 prefill 成本很高，128K 实用价值有限
 
+### n-max 扫描测试
+
+| n-max | 平均 decode | 接受率 | 结论 |
+|-------|------------|--------|------|
+| 3 | 27-40 t/s | 40-75% | 保守 |
+| 4 | 37.6 t/s | 49-80% | 推荐 |
+| 5 | 37.8 t/s | 50-70% | **推荐** |
+| 6 | 32.8 t/s | 42-64% | 开始下降 |
+
+**结论**：n-max=5 最优，与帖子结论一致。
+
+### cache-ram 优化
+
+- 添加 `--cache-ram 32768`（32GB prompt cache）
+- 短请求速度从 27-40 t/s 提升至 30-46 t/s
+- 长对话 TTFT 预期显著改善（帖子实测 14.67s → 1.26s）
+
+### Vulkan 后端实验
+
+- 编译 llama.cpp v0.1.2 Vulkan 版本成功
+- 7900 XTX 被识别（RADV NAVI31，Mesa 25.2.8）
+- **性能极差**：decode 仅 0.9 t/s，比 ROCm 慢 30 倍以上
+- 可能原因：PVE VM 直通环境下 Vulkan 性能异常，或需要额外内核/驱动配置
+- **结论**：当前 VM 环境下 Vulkan 不可用，继续优化 ROCm
+
 ## 96K / 128K Context 测试
 
 | Context | 启动 | VRAM 占用 | 短请求速度 |
@@ -102,8 +127,11 @@ Qwen3.8 官方支持 `reasoning_effort`：
 # 关键参数
 -c 65536                    # 65K 平衡性能与容量
 --reasoning off             # 工具调用场景关闭思考链
---spec-type draft-mtp --spec-draft-n-max 3
+--spec-type draft-mtp --spec-draft-n-max 5
 -ctk q8_0 -ctv q4_1         # KV cache K8V4
+--cache-ram 32768           # 32GB prompt cache
+--fit off -ngl -1           # 全量 offload
+--parallel 1                # 单 slot 吃满 context
 ```
 
 ## 下一步建议

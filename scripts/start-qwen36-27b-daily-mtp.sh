@@ -18,14 +18,18 @@ exec /home/yi/data/ai_server/bin/llama-server \
   --port 11435 \
   -c 65536 \
   -fa 1 \
+  --fit off \
+  -ngl -1 \
+  --parallel 1 \
   --spec-type draft-mtp \
   --spec-draft-n-max 3 \
   --batch-size 2048 \
   --ubatch-size 512 \
-  -ctk q4_0 \
-  -ctv q4_0 \
+  -ctk q8_0 \
+  -ctv q4_1 \
   --no-mmap \
   --tensor-split 0 \
+  --cache-ram 32768 \
   --reasoning off \
   --ctx-checkpoints 69 \
   --repeat-penalty 1.1 \
@@ -33,5 +37,6 @@ exec /home/yi/data/ai_server/bin/llama-server \
   --temp 0.4 \
   --top-p 0.95 \
   --top-k 20 \
+  --jinja \
   "$@" \
   >> "$LOG_DIR/llm-qwen36-27b-daily-mtp.log" 2>&1
